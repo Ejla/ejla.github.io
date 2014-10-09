@@ -253,6 +253,9 @@ li.active:after {
 .content a:hover {
   color: #BE4E4E;
 }
+h2.phone-visible {
+  margin-top: -20px;
+}
 .roles{
   text-align: center;
 }
@@ -566,6 +569,9 @@ div.lead {
 }
 @media (min-width: 661px) {
   .top {
+    display: none;
+  }
+  h2.phone-visible {
     display: none;
   }
 }
