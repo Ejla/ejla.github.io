@@ -564,10 +564,15 @@ div.lead {
   nav {
     width: auto;
     border-bottom: 2px solid #fff;
+    padding: 10px 0 20px 0;
   }
   nav ul {
     margin-top: 0;
   }
+  nav ul li {
+    height: 55px;
+  }
+    
   .header, .header .logo, .header .title, .footer .links, .footer .email {
     display: block;
     width: auto;
@@ -588,19 +593,9 @@ div.lead {
     padding: 0;
   }
   .header .logo {
-    margin: 10px 0;
-    background-size: 140px;
-    border-bottom: 2px solid #fff;
-    padding: 40px 0;
-    margin: 0;
-    float: none;
-    background-color: rgba(252, 102, 102, 0.6);
+    display: none;
   }
-  .header .logo:hover, .header .logo:active{
-    background-size: 140px;
-    background-color: rgba(252, 102, 102, 0.6);
-    background-image: url(images/logo_red.png)
-  }
+  
   .header .title {
     background-color: rgba(13, 16, 22, .6);
     padding: 20px;
