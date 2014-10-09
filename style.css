@@ -347,7 +347,6 @@ div.lead {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 20px 40px 40px 40px;
   margin-bottom: 40px;
-  #BBC5CE
 }
 .project h3 {
   color: #fff;
@@ -645,6 +644,9 @@ div.lead {
   }
   .wrapper {
     padding: 0
+  }
+  .contacts h2{
+    margin-top: -20px;
   }
 }
 
