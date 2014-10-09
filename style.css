@@ -395,7 +395,7 @@ div.lead {
   font-size: 30px ;
   background-color: rgba(0, 0, 0, 0.4);
   color: #FF6A6A;
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   -webkit-transition:all .3s ease;
   -moz-transition:all .3s ease;
   transition:all .3s ease;
@@ -403,7 +403,7 @@ div.lead {
   text-decoration: none
 }
 .top a:hover {
-  background-color: #272727 ;
+  background-color: rgba(0, 0, 0, 0.6) ;
   text-decoration: none
 }
 .image-wrapper { 
