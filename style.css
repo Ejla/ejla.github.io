@@ -385,6 +385,100 @@ div.lead {
 
   padding: 4px 11px;
 }
+.top {
+  position: fixed ;
+  bottom:10px;
+  right:15px;
+  z-index:999
+}
+.top a {
+  font-size: 30px ;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #FF6A6A;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  -webkit-transition:all .3s ease;
+  -moz-transition:all .3s ease;
+  transition:all .3s ease;
+  padding: 4px 10px;
+  text-decoration: none
+}
+.top a:hover {
+  background-color: #272727 ;
+  text-decoration: none
+}
+.image-wrapper { 
+  width: 80%; 
+  position: relative; 
+  background-color: #eee; 
+  margin: 30px auto; 
+} 
+.image-wrapper:after {
+  display: block; 
+  content: ''; 
+}
+.image-wrapper.luevo {
+  background: url(images/x1/Luevo-all.png) no-repeat;
+  background-size: 100%;
+}
+.image-wrapper.luevo:after { 
+  padding-top: 69%;
+}
+.image-wrapper.pozitivahub {
+  background: url(images/x1/Pozitiva-all.png) no-repeat;
+  background-size: 100%;
+}
+.image-wrapper.pozitivahub:after { 
+  padding-top: 70%;
+}
+.image-wrapper.promdm {
+  background: url(images/x1/ProMDM_Admin-all.png) no-repeat;
+  background-size: 100%;
+}
+.image-wrapper.promdm:after { 
+  padding-top: 59%;
+}
+.image-wrapper.mobileportal {
+  background: url(images/x1/Mobileportal-all.png) no-repeat;
+  background-size: 100%;
+}
+.image-wrapper.mobileportal:after { 
+  padding-top: 68%;
+}
+.image-wrapper.sportiva {
+  background: url(images/x1/Sportiva-all.png) no-repeat;
+  background-size: 100%;
+}
+.image-wrapper.sportiva:after { 
+  padding-top: 68%;
+}
+.image-wrapper.labo {
+  background: url(images/x1/Labo-all.png) no-repeat;
+  background-size: 100%;
+}
+.image-wrapper.labo:after { 
+  padding-top: 70%;
+}
+.image-wrapper.magoleum {
+  background: url(images/x1/Magoleum-all.png) no-repeat;
+  background-size: 100%;
+}
+.image-wrapper.magoleum:after { 
+  padding-top: 68%;
+}
+.image-wrapper.pametanrast {
+  background: url(images/x1/Pametanrast-all.png) no-repeat;
+  background-size: 100%;
+}
+.image-wrapper.pametanrast:after { 
+  padding-top: 70%;
+}
+.image-wrapper.lipanovic {
+  background: url(images/x1/Lipanovic-all.png) no-repeat;
+  background-size: 100%;
+}
+.image-wrapper.lipanovic:after { 
+  padding-top: 70%;
+}
 
 @media (min-width: 992px) {
     .roles > div > div {
@@ -448,8 +542,15 @@ div.lead {
   .header a{
     margin-top: 14px;
   }
+  .image-wrapper {
+    width: 100%;
+  }
 }
-
+@media (min-width: 661px) {
+  .top {
+    display: none;
+  }
+}
 @media (max-width: 660px) {
   body, html, nav, .header, .footer{
     height: auto;
@@ -522,5 +623,89 @@ div.lead {
   }
   .wrapper {
     padding: 0
+  }
+}
+
+@media  only screen and (-webkit-min-device-pixel-ratio: 1.5),  
+        only screen and (   min--moz-device-pixel-ratio: 1.5),  
+        only screen and (     -o-min-device-pixel-ratio: 3/2),  
+        only screen and (        min-device-pixel-ratio: 1.5),  
+        only screen and (min-resolution: 192dpi) {
+      
+          .image-wrapper.luevo {
+            background: url(images/x2/proba.png) no-repeat;
+            background-size: 100%;
+          }
+          .image-wrapper.pozitivahub {
+            background: url(images/x2/Pozitiva-all.png) no-repeat; 
+            background-size: 100%;
+          }
+          .image-wrapper.promdm {
+            background: url(images/x2/ProMDM_Admin-all.png) no-repeat;
+            background-size: 100%;
+          }
+          .image-wrapper.mobileportal {
+            background: url(images/x2/Mobileportal-all.png) no-repeat;
+            background-size: 100%;
+          }
+          .image-wrapper.sportiva {
+            background: url(images/x2/Sportiva-all.png) no-repeat;
+            background-size: 100%;
+          }
+          .image-wrapper.labo {
+            background: url(images/x2/Labo-all.png) no-repeat;
+            background-size: 100%;
+          }
+          .image-wrapper.magoleum {
+            background: url(images/x2/Magoleum-all.png) no-repeat; 
+            background-size: 100%;
+          }
+          .image-wrapper.pametanrast {
+            background: url(images/x2/Pametanrast-all.png) no-repeat;
+            background-size: 100%;
+          }
+          .image-wrapper.lipanovic {
+            background: url(images/x2/Lipanovic-all.png) no-repeat;
+            background-size: 100%;
+          }
+
+}
+
+@media (min-width: 1300px) {
+  .image-wrapper.luevo {
+    background: url(images/x2/Luevo-all.png) no-repeat;
+    background-size: 100%;
+  }
+  .image-wrapper.pozitivahub {
+    background: url(images/x2/Pozitiva-all.png) no-repeat; 
+    background-size: 100%;
+  }
+  .image-wrapper.promdm {
+    background: url(images/x2/ProMDM_Admin-all.png) no-repeat;
+    background-size: 100%;
+  }
+  .image-wrapper.mobileportal {
+    background: url(images/x2/Mobileportal-all.png) no-repeat;
+    background-size: 100%;
+  }
+  .image-wrapper.sportiva {
+    background: url(images/x2/Sportiva-all.png) no-repeat;
+    background-size: 100%;
+  }
+  .image-wrapper.labo {
+    background: url(images/x2/Labo-all.png) no-repeat;
+    background-size: 100%;
+  }
+  .image-wrapper.magoleum {
+    background: url(images/x2/Magoleum-all.png) no-repeat; 
+    background-size: 100%;
+  }
+  .image-wrapper.pametanrast {
+    background: url(images/x2/Pametanrast-all.png) no-repeat;
+    background-size: 100%;
+  }
+  .image-wrapper.lipanovic {
+    background: url(images/x2/Lipanovic-all.png) no-repeat;
+    background-size: 100%;
   }
 }
