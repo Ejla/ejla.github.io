@@ -438,7 +438,7 @@ div.lead {
   padding-top: 59%;
 }
 .image-wrapper.mobileportal {
-  background: url(images/x1/Mobileportal-all.png) no-repeat;
+  background: url(images/x1/MobilePortal-all.png) no-repeat;
   background-size: 100%;
 }
 .image-wrapper.mobileportal:after { 
@@ -466,7 +466,7 @@ div.lead {
   padding-top: 68%;
 }
 .image-wrapper.pametanrast {
-  background: url(images/x1/Pametanrast-all.png) no-repeat;
+  background: url(images/x1/PametanRast-all.png) no-repeat;
   background-size: 100%;
 }
 .image-wrapper.pametanrast:after { 
@@ -626,9 +626,7 @@ div.lead {
   }
 }
 
-@media 
-(-webkit-min-device-pixel-ratio: 1.3), 
-(min-resolution: 124.8dpi){ 
+@media (-webkit-min-device-pixel-ratio: 1.3){ 
       
           .image-wrapper.luevo {
             background: url(images/x2/proba.png) no-repeat;
@@ -643,7 +641,7 @@ div.lead {
             background-size: 100%;
           }
           .image-wrapper.mobileportal {
-            background: url(images/x2/Mobileportal-all.png) no-repeat;
+            background: url(images/x2/MobilePortal-all.png) no-repeat;
             background-size: 100%;
           }
           .image-wrapper.sportiva {
@@ -659,7 +657,7 @@ div.lead {
             background-size: 100%;
           }
           .image-wrapper.pametanrast {
-            background: url(images/x2/Pametanrast-all.png) no-repeat;
+            background: url(images/x2/PametanRast-all.png) no-repeat;
             background-size: 100%;
           }
           .image-wrapper.lipanovic {
@@ -683,7 +681,7 @@ div.lead {
     background-size: 100%;
   }
   .image-wrapper.mobileportal {
-    background: url(images/x2/Mobileportal-all.png) no-repeat;
+    background: url(images/x2/MobilePortal-all.png) no-repeat;
     background-size: 100%;
   }
   .image-wrapper.sportiva {
@@ -699,7 +697,7 @@ div.lead {
     background-size: 100%;
   }
   .image-wrapper.pametanrast {
-    background: url(images/x2/Pametanrast-all.png) no-repeat;
+    background: url(images/x2/PametanRast-all.png) no-repeat;
     background-size: 100%;
   }
   .image-wrapper.lipanovic {
