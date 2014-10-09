@@ -144,6 +144,7 @@ nav ul li {
   display: block;
   padding: 10px 15px 10px 15px;
   height: 70px;
+  position: relative;
 }
 nav ul li a{
   border: 2px solid rgba(255, 255, 255, .9);
@@ -167,6 +168,17 @@ nav ul li a:hover {
   margin: 0;
   color: #fff;
   background: rgba(0, 0, 0, 0.1);
+}
+li.active:after {
+  width: 13px;
+  height: 24px;
+  background: url(images/arrow-right-small.png) no-repeat;
+  display: block;
+  position: absolute;
+  right: -10px;
+  top: 23px;
+  color: #fff;
+  content: '';
 }
 .container {
   width: 100%;
@@ -271,6 +283,7 @@ div.lead {
   padding: 30px;
   background: rgba(255, 255, 255, .1);
   color: #fff;
+  margin-bottom: 30px;
 }
 .about {
   border: 1px solid #626B75;
@@ -287,6 +300,7 @@ div.lead {
 }
 .about h4, .technologies h4 {
   margin: 0 0 15px 0;
+  color: #fff;
 }
 .technologies{
   padding: 20px;
@@ -302,7 +316,7 @@ div.lead {
   margin-right: 5px;
 }
 .profile-image {
-  border-radius: 100px;
+  border-radius: 90px;
   border: 2px solid #fff;
   width: 180px;
 }
@@ -503,6 +517,9 @@ div.lead {
   nav ul li a {
     padding: 2px 6px;
   }
+  li.active:after {
+    right: -30px;
+  }
   .header .logo {
     width: 200px;
     background-size: 110px;
@@ -539,6 +556,7 @@ div.lead {
   nav ul {
   margin-top: 96px;
   }
+ 
   .header a{
     margin-top: 14px;
   }
@@ -571,6 +589,9 @@ div.lead {
   }
   nav ul li {
     height: 55px;
+  }
+  li.active:after {
+    display: none;
   }
     
   .header, .header .logo, .header .title, .footer .links, .footer .email {
