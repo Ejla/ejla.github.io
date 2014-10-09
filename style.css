@@ -387,8 +387,8 @@ div.lead {
 }
 .top {
   position: fixed ;
-  bottom:10px;
-  right:15px;
+  bottom:7px;
+  right:7px;
   z-index:999
 }
 .top a {
@@ -403,7 +403,8 @@ div.lead {
 }
 .top a:hover {
   background-color: rgba(0, 0, 0, 0.6) ;
-  text-decoration: none
+  text-decoration: none;
+  color: #fff;
 }
 .image-wrapper { 
   width: 80%; 
