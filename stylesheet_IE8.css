@@ -1,0 +1,8 @@
+.header, nav, .footer, .main {
+  display: none;
+}
+.ie8_disclaimer {
+  display: block;
+  margin: 60px auto;
+  color: #ddd;
+}
