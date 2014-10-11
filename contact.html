@@ -15,20 +15,33 @@
     <link rel="stylesheet" href="stylesheet_IE8.css">
     <![endif]-->
 
-    
-   
     <link href='https://fonts.googleapis.com/css?family=Spinnaker&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href='https://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css' rel='stylesheet' type='text/css'>
     
-    <!-- latest jQuery direct from google's CDN -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript" src="nano.js"></script>
-    <script>
-    $(document).ready(function() {
-      $(".nano").nanoScroller();
-    });
-    </script>
+   <!-- latest jQuery direct from google's CDN -->
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script type="text/javascript" src="nano.js"></script>
+   <script>
+   $(window).scroll(function(){
+     if ($(this).scrollTop() > 100) {
+       $('.top').fadeIn();
+     } else {
+       $('.top').fadeOut();
+     }
+   });
+   
+   $(document).ready(function() {
+     $(".nano").nanoScroller();
+     
+     //Click event to scroll to top
+     $('.top a').click(function(){
+       $('html, body').animate({scrollTop : 0},200);
+       return false;
+     }); 
+   });
+
+   </script>
     
     
   </head>
@@ -86,6 +99,7 @@
           </div>
         </div>
       </div>
+      <span class='top'><a href='#'><i class="ion-chevron-up"></i></a></span>
     </div>
     <div class="footer clearfix">
       <div class="links">
@@ -101,7 +115,6 @@
       </div>
     </div>
   </body>
-
   </html>
 
 
