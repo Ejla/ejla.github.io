@@ -23,9 +23,24 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="nano.js"></script>
     <script>
+  	$(window).scroll(function(){
+  		if ($(this).scrollTop() > 100) {
+  			$('.top').fadeIn();
+  		} else {
+  			$('.top').fadeOut();
+  		}
+  	});
+    
     $(document).ready(function() {
       $(".nano").nanoScroller();
+      
+    	//Click event to scroll to top
+    	$('.top a').click(function(){
+    		$('html, body').animate({scrollTop : 0},200);
+    		return false;
+    	}); 
     });
+
     </script>
 </head>
 <body>

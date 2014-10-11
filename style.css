@@ -392,7 +392,8 @@ div.lead {
   position: fixed ;
   bottom:7px;
   right:7px;
-  z-index:999
+  z-index:999;
+  display: none;
 }
 .top a {
   font-size: 30px ;
