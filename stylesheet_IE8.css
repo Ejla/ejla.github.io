@@ -1,4 +1,4 @@
-.header, .nav, .footer, .main {
+.header, .ie8-nav, .footer, .main {
   display: none;
 }
 .ie8_disclaimer {
