@@ -24,7 +24,7 @@ h2 {
   text-align: center;
   margin-bottom: 20px;
 }
-h3 {
+/*h3 {
   font-family: 'Spinnaker', sans-serif;
   font-weight: 400;
   margin-top: 15px;
@@ -32,6 +32,20 @@ h3 {
   font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 1px;
+}*/
+h3 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+h3 em {
+  font-style: normal;
+  font-weight: 600;
 }
 h4 {
   font-family: 'Spinnaker', sans-serif;
@@ -72,12 +86,8 @@ ul {
 strong {
   font-weight: 600;
 }
-.content_my strong {
-  color: #fff;
-}
-em{
-  font-size: 18px;
-}
+
+
 hr {
   margin-top: 40px;
   margin-bottom: 20px;
@@ -116,6 +126,14 @@ hr {
   color: #fff;
   margin: 0;
   line-height: 28px;
+}
+.header h1 a {
+  color: #fff;
+  transition: all .2s;
+}
+.header h1 a:hover, .header h1 a:active {
+  text-decoration: none;
+  color: #FF6A6A;
 }
 .header h1 span:first-child {
   text-transform: uppercase;
@@ -239,10 +257,17 @@ li.active:after {
   height: 100%;
   box-sizing: border-box;
 }
-.content_my {
 
+.content_my {
+  color: #f1f2f2;
   padding: 40px;
   box-sizing: border-box;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.content_my strong {
+  color: #fff;
+  font-weight: 400;
 }
 .content_my a {
   color: #FF6A6A;
@@ -251,40 +276,46 @@ li.active:after {
 .content_my a:hover {
   color: #BE4E4E;
 }
-h2.phone-visible {
+h3.phone-visible {
   margin-top: -20px;
 }
+.featured {
+  font-size: 30px;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  padding: 0 30px 30px 30px;
+  text-align: center;
+}
+.featured.welcome {
+  padding-top: 30px;
+}
+
+.featured span, h3 span {
+  display: inline-block;
+}
+.featured em {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+
+
 .roles{
   text-align: center;
 }
 .roles > div > div {
   margin-bottom: 20px; 
 }
-.roles > div > div > div{
+.roles > div > div > div {
   background: rgba(120, 176, 187, 0.3);
   padding: 15px;
   color: #D6DAE2;
 }
 .roles .icon {
   font-size: 60px;
-}
-.contacts {
-  text-align: center;
-}
-.contacts h2 {
-  margin-top: 10px;
-}
-.contacts .icon {
-  font-size: 44px;
-}
-div.lead {
-  font-style: italic;
-  font-weight: 400;
-  font-size: 16px;
-  padding: 30px;
-  background: rgba(255, 255, 255, .1);
-  color: #fff;
-  margin-bottom: 30px;
 }
 .about {
   border: 1px solid #626B75;
@@ -304,18 +335,44 @@ div.lead {
   color: #fff;
 }
 .technologies{
-  padding: 20px;
+  padding: 0 0 20px 0; 
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
 }
-.technologies ul li{
-  line-height: 24px;
-  margin-bottom: 10px;
+.technologies span {
+  display: inline-block;
 }
-.technologies strong {
+.technologies span:after {
+  content: '.';
+  position: relative;
+  top: -5px;
+  margin: 0 10px;
+  font-weight: 700;
+}
+
+.technologies span:last-child:after {
+  display: none;
+}
+
+.contacts {
+  text-align: center;
+}
+.contacts h2 {
+  margin-top: 10px;
+}
+.contacts .icon {
+  font-size: 44px;
+}
+div.lead {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0 30px 30px 30px;
+/*  background: rgba(255, 255, 255, .1);*/
   color: #fff;
+  margin-bottom: 30px;
 }
-.technologies li .icon {
-  margin-right: 5px;
-}
+
 .profile-image {
   border-radius: 90px;
   border: 2px solid #fff;
@@ -326,7 +383,7 @@ div.lead {
   margin-left: -10px;
   margin-right: -10px;
 }
-.col-md-4, .col-md-8, .col-lg-10.col-lg-offset-1  {
+.col-md-4, .col-md-8, .col-md-6, .col-lg-10.col-lg-offset-1  {
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -537,13 +594,11 @@ div.lead {
 .nano .nano-pane   { background: rgba(255, 255, 255, .2); }
 .nano .nano-slider { background: #17243b; }
 
-
-
-
-
 .ie8_disclaimer {
   display: none;
 }
+
+
 
 @media (min-width: 992px) {
     .roles > div > div {
@@ -619,7 +674,7 @@ div.lead {
   .top {
     display: none;
   }
-  h2.phone-visible {
+  h3.phone-visible {
     display: none;
   }
 }
@@ -694,11 +749,34 @@ div.lead {
   .wrapper {
     padding: 0
   }
-  .contacts h2{
+  .contacts h3{
     margin-top: -20px;
   }
   .nano > .nano-content {
     position: relative;
+  }
+  .featured {
+    font-size: 28px;
+    margin-bottom: 20px;
+    padding: 0 20px 20px 20px;
+  }
+  .skills {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 1080px) {
+  .technologies span {
+    display: block;
+    line-height: 1.8em;
+  }
+  .technologies span:before {
+    content: '.';
+    position: relative;
+    top: -5px;
+    margin: 0 10px;
+  }
+  .technologies span:last-child:after {
+    display: inline;
   }
 }
 
