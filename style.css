@@ -629,6 +629,9 @@ div.lead {
   nav ul li a {
     padding: 2px 6px;
   }
+  nav ul li.active a:hover {
+    padding: 2px 6px;
+  }
   li.active:after {
     right: -30px;
   }
