@@ -589,7 +589,7 @@ div.lead {
   background: #444;
   background: rgba(0,0,0,.5);
   position              : relative;
-  margin                : 2px 3px 2px 2px;
+  margin                : 2px;
   border-radius: 5px;
 
 }
@@ -747,7 +747,7 @@ div.lead {
   }
   
   .header .title {
-    background-color: rgba(13, 16, 22, .6);
+    background-color: rgba(17, 44, 58, .5);
     padding: 20px;
   }
   .header {
