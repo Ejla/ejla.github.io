@@ -1,0 +1,132 @@
+
+.page-wrap {
+  min-height: 100%;
+  padding-top: 50px;
+  /* equal to footer height */
+  margin-bottom: -110px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+footer, .page-wrap:after {
+  height: 110px; 
+}
+
+.container {
+  padding: 0 50px;
+}
+
+section {
+  padding: 40px 0;
+}
+section[class^="bg"] {
+  padding: 40px;
+  @include overlay();
+}
+section[class^="bg"]+section[class^="bg"] {
+  margin-top: 50px;
+}
+section[class^="bg"]:last-child {
+  margin-bottom: 50px;
+}
+
+footer {
+  background-color: $primaryDark;
+  color: $primaryLight;
+  padding: 40px 0;
+}
+footer .contacts a{
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 28px;
+  color: $primary;
+  &:hover, &:active {
+    color: $primaryLight;
+  }
+}
+aside[class^="bg"] {
+  padding: 5px 20px 20px 20px;
+  margin-top: 40px;
+}
+
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0;
+  }
+  section, section[class^="bg"], footer {
+    padding: 30px 20px;
+  }
+}
+
+// GRID
+
+.row {
+  margin-right: -$gutter;
+  margin-left: -$gutter;
+}
+.row:before, .row:after {
+  display: table;
+  content: " ";
+}
+.row:after {
+  clear: both;
+}
+*[class^="col"] {
+  padding-left: $gutter;
+  padding-right: $gutter;
+  float: left;
+}
+.col-12 {
+  width: 100%;
+}
+.col-11 {
+  width: 91.66666667%;
+}
+.col-10 {
+  width: 83.33333333%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-8 {
+  width: 66.66666667%;
+}
+.col-7 {
+  width: 58.33333333%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-5 {
+  width: 41.66666667%;
+}
+.col-4 {
+  width: 33.33333333%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-2 {
+  width: 16.66666667%;
+}
+.col-1 {
+  width: 8.33333333%;
+}
+
+@media (max-width: 600px) {
+  *[class^="col"] {
+    width: 100%;
+    padding:0;
+  }
+  .row {
+    margin: 0;
+  }
+}
+
+.centerpiece {
+  margin: 0 auto;
+  max-width: 700px;
+}

@@ -1,0 +1,45 @@
+---
+title: Sportiva
+
+src: sportiva
+
+project-description: Sportiva is online search engine for local sports activities, with results displayed eather on the map or in list layout. Advanced searching options include type of sport, age and search area.
+
+job-description: I covered UX design and front-end development of the application homepage. The homepage needed to combine search field and filter, a map/list of nearby sports activities, together with related news and promotions. The biggest challenge was making the complex search filter easy to use on all screen sizes.
+
+project-tags:   
+- UX Design
+- Frontend Development
+
+technologies: 
+- HTML5
+- CSS3
+- Bootstrap
+- JavaScript
+- jQuery
+
+category: project
+
+---
+<div class="project-overview clearfix"> 
+  <h3>{{ page.title }} {% if page.URL %}<a class="a2" href="{{ page.URL }}" target="_blank"><i class="fa fa-external-link"></i></a>{% endif %}</h3>
+  <img class="project-image" src="../../assets/images/projects/large/{{ page.src }}.png" alt="{{ page.title }}"/>
+  
+  <p class="lead">{{ page.project-description }}</p>
+  <h5>Type of work:</h5>
+  <p>
+  {% for tags in page.project-tags %}
+    <span class="tag">{{ tags }}</span>
+  {% endfor %}
+  </p>
+  <p>{{ page.job-description }}</p>
+  <h5>Technologies:</h5>
+  <ul class="technologies">
+    {% for technologies in page.technologies %}
+      <li>
+        <img src="../assets/images/logos/logo-{{ technologies }}.png" alt="Logo {{ technologies }}">
+        <h6>{{ technologies }}</h6>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

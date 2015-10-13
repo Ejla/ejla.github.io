@@ -1,0 +1,45 @@
+---
+title: Luevo.com
+
+src: luevo
+
+project-description: Luevo is a Toronto-based company that offers a unique take on letting consumers shop the runway. Inspired by crowdfunding, Luevo is letting people pre-order their favorite runway looks, which in turn gives up-and-coming designers the funds that they need to advance production.
+
+job-description: Coding of responsive HTML/CSS - Bootstrap/jQuery templates based on PSD designes provided by the client and integrating them with Ruby on Rails back-end code.
+
+project-tags:   
+- Frontend Development
+
+technologies: 
+- HTML5
+- CSS3
+- Bootstrap
+- JavaScript
+- jQuery
+
+category: project
+
+URL: http://preorder.luevo.com/
+---
+<div class="project-overview clearfix"> 
+  <h3>{{ page.title }} {% if page.URL %}<a class="a2" href="{{ page.URL }}" target="_blank"><i class="fa fa-external-link"></i></a>{% endif %}</h3>
+  <img class="project-image" src="../../assets/images/projects/large/{{ page.src }}.png" alt="{{ page.title }}"/>
+  
+  <p class="lead">{{ page.project-description }}</p>
+  <h5>Type of work:</h5>
+  <p>
+  {% for tags in page.project-tags %}
+    <span class="tag">{{ tags }}</span>
+  {% endfor %}
+  </p>
+  <p>{{ page.job-description }}</p>
+  <h5>Technologies:</h5>
+  <ul class="technologies">
+    {% for technologies in page.technologies %}
+      <li>
+        <img src="../assets/images/logos/logo-{{ technologies }}.png" alt="Logo {{ technologies }}">
+        <h6>{{ technologies }}</h6>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

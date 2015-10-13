@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mirna Majstorović - UX Designer and Web Developer</title>
+    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</description>
+    <link>http://yourdomain.com/</link>
+    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 13 Oct 2015 20:42:17 +0200</pubDate>
+    <lastBuildDate>Tue, 13 Oct 2015 20:42:17 +0200</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>What is UX Design All About?</title>
+        <description>&lt;p&gt;What is UX design exactly and what is actual expertise of a UX designer? When we come to think about it, it&#39;s kind of fuzzy, isn&#39;t it?&lt;/p&gt;
+
+&lt;p&gt;But what we do know, or better said - feel - is the difference between good UX and bad UX, don&#39;t we? We feel angry when the product is not working as we expected, confused when we don&#39;t know what to do next, irritated when we have to fill out some enormous form with information that simply can&#39;t be relevant...&lt;br/&gt; 
+On the other hand we feel satisfied, smart, sometimes even amazed, when we get through some complicated process without friction and question marks above our heads - somebody there really thought about how we will feel. Somebody that cares.&lt;/p&gt;
+&lt;img class=&quot;project-image&quot; src=&quot;/assets/images/blog/ux.jpg&quot; alt=&quot;ux&quot;/&gt;
+&lt;p&gt;So there it is, that is the first and most important characteristic of a good UX designer - they CARE about how you will feel while using the product. And from that caring all the good things follow.&lt;/p&gt;
+&lt;p&gt;The mission of UX designers is to empathize with you as a user, try to predict the context in which you will be using the product, how you will be thinking and feeling, in other words, try to experience it from your point of view. That way they can remove the obstacles in your way, answer questions you might have, put visual clues for you to easily find your way, organize and classify things to lower your cognitive load...&lt;/p&gt;
+
+&lt;h5&gt;Research&lt;/h5&gt;
+&lt;p&gt;So how do UX designers do that, how can they know so much about us?&lt;/p&gt; 
+&lt;p&gt;Well, by using all means available ;)&lt;br/&gt;
+Research is a good start - about subject matter, about similar products, about users - what motivates them, what are their habits...&lt;/p&gt;
+&lt;p&gt;Research can be done in different ways - one of the most efficient is interviewing, users directly or different people involved in product development - business owners, customer service consultants, etc.&lt;br/&gt;
+Asking the right questions in the right manner is very important here, because human psychology is rather tricky - many times what we say is not what we actually do, but rather what we would like to do or we think we are doing, so it&#39;s essential to skip all the conceiving layers and get to the underlying truth.&lt;/p&gt; 
+&lt;p&gt;The other way UX designers can get to know the users is by studying their behavior in similar situations, with similar products - is there a particular way they are doing certain actions or achieving certain goals, do they have some preferences, habits...&lt;br/&gt;
+Some really helpful stuff come out of this initial research, at least something to start from.&lt;/p&gt;
+
+&lt;h5&gt;Prototyping&lt;/h5&gt;
+&lt;p&gt;Then comes the tricky part - how to translate these research results into a user friendly product? 
+This is the moment when UX designer includes other members of the product design team, utilizing their expertise and experience (product managers, visual designers, developers...). UX designer shares all the insights from the research phase, and together they start drafting product features, copying best practices, combining them with new ideas, iterating, refining until they come up with a product design which seems like &quot;the thing&quot;.&lt;/p&gt;
+
+&lt;h5&gt;Testing&lt;/h5&gt;
+&lt;p&gt;It is considered a good practice to exercise a lean approach in UX design, meaning not to go too deep into defining all the bells and whistles of the final product, but to outline main features into minimal viable product, something that is presentable to the users but won&#39;t take months and months to develop. The reason for lean UX approach is the fact that in this stage the design team still doesn&#39;t know how the users will react to the product, are all of their predictions and assumptions correct? The only way to find out is to test the main principles with real users - do they find the workflow efficient and logical, where are the possible pitfalls? Only after testing and refining is the product ready for the real world.&lt;/p&gt;
+ 
+
+</description>
+        <pubDate>Tue, 13 Oct 2015 21:42:38 +0200</pubDate>
+        <link>http://yourdomain.com/2015/10/13/what-is-ux-design.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2015/10/13/what-is-ux-design.html</guid>
+        
+        <category>UX DESIGN</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>PozitivaHub Case Study</title>
+        <description>&lt;p class=&quot;lead&quot;&gt;Pozitiva Hub is a web application that supports weekly offering, ordering and delivery process and related communication in CSA groups.&lt;/p&gt;
+
+&lt;img class=&quot;project-image&quot; src=&quot;/assets/images/projects/large/pozitiva.png&quot; alt=&quot;pozitiva&quot;/&gt;
+
+&lt;h5&gt;Subject Matter&lt;/h5&gt;
+&lt;p&gt;CSA (Community Supported Agriculture) movement started in developed countries in 1950s, as a reaction to growing industrial food production and distribution, jeopardizing the survival of small organic farms. 
+The main principle of CSA movement is direct communication between small family farmers and their customers and sharing the risks of ever so risky small farm food production. &lt;br/&gt;
+In practice this is achieved by forming small sustainable groups of consumers around one or several farmers. The group agrees on the terms under which they will buy out the farmer&#39;s produce in following season - that way farmers have secured market for their products and can focus on field works in peak season. On the other hand, consumers know where their food is coming from and how it is produced (in most cases the focus is on organic).&lt;/p&gt;
+
+&lt;h5&gt;Context&lt;/h5&gt;
+&lt;p&gt;This web application was built for specific needs of one CSA group in Zagreb.&lt;br/&gt;
+Before PozitivaHub, communication in the group was relying on free online tools - mailing list and Google forms. Farmers would create offers using simple Google form and publish it through mailing list.&lt;br/&gt;
+As the number of group members and farmers grew, that process was becoming too chaotic - there were way too many mails circulating, mistakes were common and the whole organization required enormous human resources. Some kind of custom automatisation of the offering and ordering process became a must.&lt;/p&gt;
+
+&lt;h5&gt;Underlying process&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Farmers publish their offers to closed CSA group on weekly basis - the offer contains information about the farmer and his farming methods, product description, unit prices, ordering deadline, time and place of delivery and payment methods&lt;/li&gt;
+&lt;li&gt;Customers create orders which are not binding (show the intention of buying, but the actual payment is not carried out at this point).&lt;/li&gt;
+&lt;li&gt;Farmers receive orders, collect and pack the products, calculate final price, deliver them to appointed location and time and collect the payment according to previous agreement with the group.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5&gt;Why not some &quot;regular&quot; web-shop?&lt;/h5&gt;
+&lt;p&gt;The first thought was to use some of the existing web-shop solutions, but after analyzing the requirements it turned out they lacked flexibility.&lt;/p&gt;
+&lt;p&gt;Orders in web-shops are binding and could not be different from what is actually delivered, which is a show-stopper for small farmers - they never know what they will find in the field, will there be enough for everyone, and handling &quot;exceptions&quot; would be too much of administrative work for them. Farmers need a simple way to modify quantities after they see what is available for harvesting, so besides &quot;ordered&quot; we needed a state &quot;delivered&quot;.&lt;/p&gt;
+&lt;p&gt;The other issue was handling products that are sold by piece, such as turkey, squash etc. - the price for those products is usually expressed by unit (e.g. 10$/kg) but the farmers don&#39;t know in advance how much will the harvested piece weigh, so they need to be able to enter exact weight of the delivered piece and then get the total price calculated.&lt;/p&gt;
+
+&lt;h5&gt;REQUIREMENTS&lt;/h5&gt;
+After analysing all the aspects of the process, we came up with following requirements:
+&lt;ul&gt;
+&lt;li&gt;Access to application needed to be restricted only to group members - user registration needed to be confirmed by administrator&lt;/li&gt;
+&lt;li&gt;At least 3 user roles were required - user (can view offers and create orders), producer (can create offers and orders) and admin. Superadmin would have been great, but because of the restricted (read &quot;no&quot;) budget, that role was discarded.&lt;/li&gt;
+&lt;li&gt;Multytenancy - one app should support more groups (at the time another group was forming so the idea was to share the same app and restrict user access to offers according to group membership).&lt;/li&gt;
+&lt;li&gt;One offer must support multiple delivery locations and times&lt;/li&gt;
+&lt;li&gt;Basic communication between farmers and buyers should be covered (messaging, contact info...)&lt;/li&gt;
+&lt;li&gt;Figure out the simplest and easiest way for farmers to publish their offers on weekly basis - taking into account different products and ways they can be offered (bulk, in package, by piece...) eg. how to manage the quantity and total price calculation based on such different inputs&lt;/li&gt;
+&lt;li&gt;UI should &quot;speak for itself&quot; - there were no human resources to cover in person education and support, so the whole offering and ordering process should be frictionless, fluid and easy to understand (taking into account various levels of users&#39; IT literacy)&lt;/li&gt;
+&lt;li&gt;Interface needs to be responsive - it is expected users will want to check their orders status on their mobiles prior to delivery&lt;/li&gt;
+&lt;li&gt;Farmers should be able to create basic paper documentation needed for transport and delivery (Delivery Notes, Orders) and export Sales Reports in the form ready for further analyses (.csv documents) &lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h5&gt;LEARNING POINTS&lt;/h5&gt;
+&lt;p class=&quot;lead&quot;&gt;Best UX design comes from deep understanding of the problem the product is aiming to solve, or &quot;Understanding the Problem is Half the Solution&quot;.&lt;/p&gt;
+
+&lt;p&gt;PozitivaHub is a successful product - several groups are already using the application and find it helpful, easy to use, with just the right functionalities that make their lives so much easier.
+I believe one of the main reasons for the success was the fact that UX designer - me - was also one of the founders and organizers of the CSA group.
+Understanding of subject matter, users and process is the first step in UX design process, otherwise it comes to tapping in the dark. Usually the understanding is gained by research, interviewing stakeholders, testing and refining and other useful techniques. Much of that process was skipped here, or to be more precise, was going on for almost 2 years prior to actual app development, by being involved in the group organization. By working on this project I was a user, a business owner, a product manager and a UX designer all in one - can&#39;t get better than that ;) &lt;/p&gt;
+&lt;p&gt;This positive experience was for me a living proof that the saying &quot;Understanding the Problem is Half the Solution&quot; is 100% true. The only question is how to achieve the understanding and start solving the problem - that is actually what UX design is all about.&lt;/p&gt;
+
+
+
+
+</description>
+        <pubDate>Fri, 09 Oct 2015 21:42:38 +0200</pubDate>
+        <link>http://yourdomain.com/2015/10/09/pozitivahub-case-study.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/2015/10/09/pozitivahub-case-study.html</guid>
+        
+        <category>UX DESIGN</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

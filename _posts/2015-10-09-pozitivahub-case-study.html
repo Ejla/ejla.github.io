@@ -1,0 +1,62 @@
+---
+layout: post
+src: pozitiva
+title:  "PozitivaHub Case Study"
+date:   2015-10-09 19:42:38
+tags: 
+- UX DESIGN
+excerpt: Pozitiva Hub is a web application that supports weekly offering, ordering and delivery process and related communication in CSA (Community Supported Agriculture) groups.
+---
+
+<p class="lead">Pozitiva Hub is a web application that supports weekly offering, ordering and delivery process and related communication in CSA groups.</p>
+
+<img class="project-image" src="{{ site.baseurl }}/assets/images/projects/large/{{ page.src }}.png" alt="{{ page.src }}"/>
+
+<h5>Subject Matter</h5>
+<p>CSA (Community Supported Agriculture) movement started in developed countries in 1950s, as a reaction to growing industrial food production and distribution, jeopardizing the survival of small organic farms. 
+The main principle of CSA movement is direct communication between small family farmers and their customers and sharing the risks of ever so risky small farm food production. <br/>
+In practice this is achieved by forming small sustainable groups of consumers around one or several farmers. The group agrees on the terms under which they will buy out the farmer's produce in following season - that way farmers have secured market for their products and can focus on field works in peak season. On the other hand, consumers know where their food is coming from and how it is produced (in most cases the focus is on organic).</p>
+
+<h5>Context</h5>
+<p>This web application was built for specific needs of one CSA group in Zagreb.<br/>
+Before PozitivaHub, communication in the group was relying on free online tools - mailing list and Google forms. Farmers would create offers using simple Google form and publish it through mailing list.<br/>
+As the number of group members and farmers grew, that process was becoming too chaotic - there were way too many mails circulating, mistakes were common and the whole organization required enormous human resources. Some kind of custom automatisation of the offering and ordering process became a must.</p>
+
+<h5>Underlying process</h5>
+<ul>
+<li>Farmers publish their offers to closed CSA group on weekly basis - the offer contains information about the farmer and his farming methods, product description, unit prices, ordering deadline, time and place of delivery and payment methods</li>
+<li>Customers create orders which are not binding (show the intention of buying, but the actual payment is not carried out at this point).</li>
+<li>Farmers receive orders, collect and pack the products, calculate final price, deliver them to appointed location and time and collect the payment according to previous agreement with the group.</li>
+</ul>
+
+<h5>Why not some "regular" web-shop?</h5>
+<p>The first thought was to use some of the existing web-shop solutions, but after analyzing the requirements it turned out they lacked flexibility.</p>
+<p>Orders in web-shops are binding and could not be different from what is actually delivered, which is a show-stopper for small farmers - they never know what they will find in the field, will there be enough for everyone, and handling "exceptions" would be too much of administrative work for them. Farmers need a simple way to modify quantities after they see what is available for harvesting, so besides "ordered" we needed a state "delivered".</p>
+<p>The other issue was handling products that are sold by piece, such as turkey, squash etc. - the price for those products is usually expressed by unit (e.g. 10$/kg) but the farmers don't know in advance how much will the harvested piece weigh, so they need to be able to enter exact weight of the delivered piece and then get the total price calculated.</p>
+
+<h5>REQUIREMENTS</h5>
+After analysing all the aspects of the process, we came up with following requirements:
+<ul>
+<li>Access to application needed to be restricted only to group members - user registration needed to be confirmed by administrator</li>
+<li>At least 3 user roles were required - user (can view offers and create orders), producer (can create offers and orders) and admin. Superadmin would have been great, but because of the restricted (read "no") budget, that role was discarded.</li>
+<li>Multytenancy - one app should support more groups (at the time another group was forming so the idea was to share the same app and restrict user access to offers according to group membership).</li>
+<li>One offer must support multiple delivery locations and times</li>
+<li>Basic communication between farmers and buyers should be covered (messaging, contact info...)</li>
+<li>Figure out the simplest and easiest way for farmers to publish their offers on weekly basis - taking into account different products and ways they can be offered (bulk, in package, by piece...) eg. how to manage the quantity and total price calculation based on such different inputs</li>
+<li>UI should "speak for itself" - there were no human resources to cover in person education and support, so the whole offering and ordering process should be frictionless, fluid and easy to understand (taking into account various levels of users' IT literacy)</li>
+<li>Interface needs to be responsive - it is expected users will want to check their orders status on their mobiles prior to delivery</li>
+<li>Farmers should be able to create basic paper documentation needed for transport and delivery (Delivery Notes, Orders) and export Sales Reports in the form ready for further analyses (.csv documents) </li>
+</ul>
+
+
+<h5>LEARNING POINTS</h5>
+<p class="lead">Best UX design comes from deep understanding of the problem the product is aiming to solve, or "Understanding the Problem is Half the Solution".</p>
+
+<p>PozitivaHub is a successful product - several groups are already using the application and find it helpful, easy to use, with just the right functionalities that make their lives so much easier.
+I believe one of the main reasons for the success was the fact that UX designer - me - was also one of the founders and organizers of the CSA group.
+Understanding of subject matter, users and process is the first step in UX design process, otherwise it comes to tapping in the dark. Usually the understanding is gained by research, interviewing stakeholders, testing and refining and other useful techniques. Much of that process was skipped here, or to be more precise, was going on for almost 2 years prior to actual app development, by being involved in the group organization. By working on this project I was a user, a business owner, a product manager and a UX designer all in one - can't get better than that ;) </p>
+<p>This positive experience was for me a living proof that the saying "Understanding the Problem is Half the Solution" is 100% true. The only question is how to achieve the understanding and start solving the problem - that is actually what UX design is all about.</p>
+
+
+
+

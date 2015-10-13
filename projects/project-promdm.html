@@ -1,0 +1,45 @@
+---
+title: ProMDM
+
+src: promdm
+
+project-description: ProMDM is a mobile device management solution that enables companies to remotely control their mobile devices - track status, push new or update existing mobile applications, control access to company's on-line resources, wipe stolen devices etc.
+
+job-description: Design of administration user interface, front-end coding in HTML/CSS - Bootstrap/jQuery
+
+project-tags:   
+- UI Design
+- Frontend Coding
+
+technologies: 
+- HTML5
+- CSS3
+- Bootstrap
+- JavaScript
+- jQuery
+
+category: project
+
+---
+<div class="project-overview clearfix"> 
+  <h3>{{ page.title }} {% if page.URL %}<a class="a2" href="{{ page.URL }}" target="_blank"><i class="fa fa-external-link"></i></a>{% endif %}</h3>
+  <img class="project-image" src="../../assets/images/projects/large/{{ page.src }}.png" alt="{{ page.title }}"/>
+  
+  <p class="lead">{{ page.project-description }}</p>
+  <h5>Type of work:</h5>
+  <p>
+  {% for tags in page.project-tags %}
+    <span class="tag">{{ tags }}</span>
+  {% endfor %}
+  </p>
+  <p>{{ page.job-description }}</p>
+  <h5>Technologies:</h5>
+  <ul class="technologies">
+    {% for technologies in page.technologies %}
+      <li>
+        <img src="../assets/images/logos/logo-{{ technologies }}.png" alt="Logo {{ technologies }}">
+        <h6>{{ technologies }}</h6>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
