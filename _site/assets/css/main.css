@@ -524,8 +524,7 @@ aside[class^="bg"] {
         #hero #hero-content h1 span:last-child {
           font-size: .7em; }
     #hero #hero-content p {
-      margin: 7% 0 0 0;
-      font-style: italic; }
+      margin: 7% 0 0 0; }
       #hero #hero-content p em {
         font-weight: 500;
         color: #ea6f5a; }
