@@ -2,12 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mirna Majstorović - UX Designer and Web Developer</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-</description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 14 Oct 2015 16:49:50 +0200</pubDate>
-    <lastBuildDate>Wed, 14 Oct 2015 16:49:50 +0200</lastBuildDate>
+    <description>I am prototyping web applications and designing and coding user interfaces in HTML, CSS and JavaScript. I like to make complex workflows simple, seamless, and pleasant and strive to deliver well thought-out designs, accompanied by clean, valid, reusable code.</description>
+    <link>http://ejla.github.io/</link>
+    <atom:link href="http://ejla.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 14 Oct 2015 21:12:07 +0200</pubDate>
+    <lastBuildDate>Wed, 14 Oct 2015 21:12:07 +0200</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -39,8 +38,8 @@ This is the moment when UX designer includes other members of the product design
 
 </description>
         <pubDate>Tue, 13 Oct 2015 21:42:38 +0200</pubDate>
-        <link>http://yourdomain.com/2015/10/13/what-is-ux-design.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2015/10/13/what-is-ux-design.html</guid>
+        <link>http://ejla.github.io/2015/10/13/what-is-ux-design.html</link>
+        <guid isPermaLink="true">http://ejla.github.io/2015/10/13/what-is-ux-design.html</guid>
         
         <category>UX DESIGN</category>
         
@@ -103,8 +102,8 @@ Understanding of subject matter, users and process is the first step in UX desig
 
 </description>
         <pubDate>Fri, 09 Oct 2015 21:42:38 +0200</pubDate>
-        <link>http://yourdomain.com/2015/10/09/pozitivahub-case-study.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/2015/10/09/pozitivahub-case-study.html</guid>
+        <link>http://ejla.github.io/2015/10/09/pozitivahub-case-study.html</link>
+        <guid isPermaLink="true">http://ejla.github.io/2015/10/09/pozitivahub-case-study.html</guid>
         
         <category>UX DESIGN</category>
         
