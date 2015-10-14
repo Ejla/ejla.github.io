@@ -688,19 +688,13 @@ aside[class^="bg"] {
 
 #contact {
   text-align: center;
-  margin-top: 20px; }
+  margin-top: 50px; }
   #contact img {
-    border-radius: 90px;
-    border: 5px solid #fff;
+    border-radius: 50%;
     width: 180px; }
-  #contact p {
-    font-size: 16px; }
   #contact i {
-    font-size: 32px;
-    margin-top: 20px; }
-  @media (max-width: 900px) {
-    #contact .col-3 {
-      width: 100%; } }
+    font-size: 22px;
+    margin: 10px 0 5px; }
 
 #project {
   margin-top: 20px;
