@@ -37,7 +37,7 @@ category: project
   <ul class="technologies">
     {% for technologies in page.technologies %}
       <li>
-        <img src="{{ site.baseurl }}/assets/images/logos/logo-{{ technologies }}.png" alt="Logo {{ technologies }}">
+        <img src="{{ site.baseurl }}/assets/images/logos/logo-{{ technologies | downcase }}.png" alt="Logo {{ technologies }}">
         <h6>{{ technologies }}</h6>
       </li>
     {% endfor %}
