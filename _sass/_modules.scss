@@ -87,11 +87,14 @@
       }
     }
     @media (min-width: 1400px) {
-      width: 9.09%;
+      width: 8.33333333%;
     }
     @media (max-width: 400px) { 
       h6 {
       display: none;
+      }
+      img {
+        max-width: 50px;
       }
     }
   }
@@ -154,9 +157,17 @@
 // OTHER PAGES
 
 #projects {
+  padding-top: 30px;
+  @media (max-width: 600px) {
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
   h2 {
     text-align: center;
     margin-bottom: 20px;
+    @media (max-width: 879px) {
+      margin-bottom: 0;
+    }
   }
 }
 #skills {
@@ -282,6 +293,7 @@
     float: right;
     width: 50%;
     margin-left: 2%;
+    margin-bottom: 4%;
     @media (max-width: 1000px) {
       float: none;
       width: 80%;

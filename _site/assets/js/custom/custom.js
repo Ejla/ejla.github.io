@@ -28,12 +28,22 @@ $(document).ready(function() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          centerPadding: '100px',
           infinite: true,
           dots: false
         }
       },
       {
         breakpoint: 700,
+        settings: {
+          centerPadding: '50px',
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 500,
         settings: {
           centerPadding: '15px',
           slidesToShow: 1,

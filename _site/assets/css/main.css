@@ -371,14 +371,14 @@ strong {
   min-height: 100%;
   padding-top: 50px;
   /* equal to footer height */
-  margin-bottom: -110px; }
+  margin-bottom: -100px; }
 
 .page-wrap:after {
   content: "";
   display: block; }
 
 footer, .page-wrap:after {
-  height: 110px; }
+  height: 100px; }
 
 .container {
   padding: 0 50px; }
@@ -415,15 +415,18 @@ section[class^="bg"]:last-child {
 footer {
   background-color: #2C3640;
   color: #8696a5;
-  padding: 40px 0; }
-
-footer .contacts a {
-  display: inline-block;
-  margin-right: 30px;
-  font-size: 28px;
-  color: #546371; }
-  footer .contacts a:hover, footer .contacts a:active {
-    color: #8696a5; }
+  padding: 20px 0; }
+  footer p {
+    text-align: center; }
+  footer .contacts a {
+    display: inline-block;
+    margin-right: 25px;
+    font-size: 28px;
+    color: #546371; }
+    footer .contacts a:hover, footer .contacts a:active {
+      color: #8696a5; }
+    footer .contacts a:last-child {
+      margin-right: 0; }
 
 aside[class^="bg"] {
   padding: 5px 20px 20px 20px;
@@ -434,7 +437,7 @@ aside[class^="bg"] {
     padding: 0; }
 
   section, section[class^="bg"], footer {
-    padding: 30px 20px; } }
+    padding: 20px; } }
 .row {
   margin-right: -10px;
   margin-left: -10px; }
@@ -570,10 +573,12 @@ aside[class^="bg"] {
           opacity: .6; } }
     @media (min-width: 1400px) {
       #technologies .col-thumb {
-        width: 9.09%; } }
+        width: 8.33333333%; } }
     @media (max-width: 400px) {
       #technologies .col-thumb h6 {
-        display: none; } }
+        display: none; }
+      #technologies .col-thumb img {
+        max-width: 50px; } }
 
 #work {
   text-align: center; }
@@ -621,9 +626,18 @@ aside[class^="bg"] {
 #carousel .project {
   opacity: 0; }
 
-#projects h2 {
-  text-align: center;
-  margin-bottom: 20px; }
+#projects {
+  padding-top: 30px; }
+  @media (max-width: 600px) {
+    #projects {
+      padding-top: 20px;
+      padding-bottom: 0; } }
+  #projects h2 {
+    text-align: center;
+    margin-bottom: 20px; }
+    @media (max-width: 879px) {
+      #projects h2 {
+        margin-bottom: 0; } }
 
 #skills {
   margin-top: 20px; }
@@ -718,7 +732,8 @@ aside[class^="bg"] {
 .project-overview img.project-image {
   float: right;
   width: 50%;
-  margin-left: 2%; }
+  margin-left: 2%;
+  margin-bottom: 4%; }
   @media (max-width: 1000px) {
     .project-overview img.project-image {
       float: none;
