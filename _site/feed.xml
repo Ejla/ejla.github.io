@@ -2,12 +2,94 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mirna Majstorović - UX Designer and Web Developer</title>
-    <description>I am prototyping web applications and designing and coding user interfaces in HTML, CSS and JavaScript. I like to make complex workflows simple, seamless, and pleasant and strive to deliver well thought-out designs, accompanied by clean, valid, reusable code.</description>
+    <description>I am prototyping web applications and designing and coding user interfaces in HTML, CSS and JavaScript. I like to make complex workflows simple, seamless, and pleasant and strive to deliver well thought-out designs, accompanied by clean, valid, reusable code.
+</description>
     <link>http://ejla.github.io/</link>
     <atom:link href="http://ejla.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 14 Oct 2015 21:12:07 +0200</pubDate>
-    <lastBuildDate>Wed, 14 Oct 2015 21:12:07 +0200</lastBuildDate>
+    <pubDate>Thu, 22 Oct 2015 11:35:55 +0200</pubDate>
+    <lastBuildDate>Thu, 22 Oct 2015 11:35:55 +0200</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>ProMDM Redesign Case Study</title>
+        <description>&lt;p class=&quot;lead&quot;&gt;ProMDM is a Mobile Device Management service - the kind of service that became necessary once companies started to integrate larger numbers of mobile devices (smartphones, tablets) into their IT environment.&lt;br/&gt;
+First version of the ProMDM admin interface was designed as very simple and clean UI, but growing number of features required thorough redesign.&lt;/p&gt;
+&lt;br/&gt;
+&lt;img class=&quot;project-image&quot; src=&quot;/assets/images/projects/large/promdm-new.png&quot; alt=&quot;promdm-new&quot;/&gt;
+&lt;br/&gt;
+
+
+
+
+&lt;h5&gt;Subject Matter&lt;/h5&gt;
+
+&lt;p&gt;Mobile Device Management is rather new service, that became necessary once companies started to integrate larger numbers of mobile devices (smartphones, tablets) into their IT environment. Each device owned by the company needs to be registered - enrolled into the system, assigned to the employee, equipped with various business applications, e-mail and wi-fi settings, authorized or restricted from certain services according to employee role. The system also enforces security measures e.g. whipes the device in case it is lost or stolen. &lt;/p&gt;
+
+
+&lt;h5&gt;Context&lt;/h5&gt;
+&lt;p&gt;First version of the ProMDM admin interface was designed as very simple and clean UI, but growing number of features required thorough redesign.&lt;br/&gt;
+Redesign was tough - existing users were very satisfied with initial UI so the redesign wasn&#39;t supposed to mess up existing usage patterns. It is difficult to make improvements, but not change anything ;) but there are ways, so we put our heads together and came up with something even better than before.&lt;/p&gt;
+
+&lt;h4&gt;Interventions&lt;/h4&gt;
+&lt;h5&gt;Interface layout&lt;/h5&gt;
+ &lt;img style=&quot;max-width: 45%; margin-left: 2%; float: right;&quot;class=&quot;project-image&quot; src=&quot;/assets/images/blog/promdm-old.jpg&quot; alt=&quot;ProMDM&quot;/&gt;
+&lt;p&gt;The problem with old layout was that it didn&#39;t use up the whole width of the larger screens - instead, it was concentrated in the middle, with navigation on top, and ever growing content and functionalities started to stack one below another. The interface started to feel cluttered and constant scrolling up and down was becoming the issue.&lt;/p&gt;
+
+  &lt;p&gt;
+Therefore we introduced new layout, with fixed vertical navigation on the left hand side where it is always available and can contain more menu elements than horizontal navigation, which left the whole right side of the screen available for content and functionalities.&lt;br/&gt;
+Also, we introduced the additional right section/sidebar, so the content of 3 columns can be viewed and managed in parallel, with minimum scrolling. This layout is now much more flexible and resistant to future growth of content and functionalities.&lt;/p&gt;
+
+&lt;h5&gt;Responsive and Adaptive Layout&lt;/h5&gt;
+&lt;p&gt;Admins of MDM systems usually sit in the office in front of the largest screens there are ;) so they expect all of the most common functionalities to be available on first screen, which is not unreasonable, there is quite enough space for them it just needs to be organized differently.&lt;br/&gt; 
+But it also turned out they sometimes want to use tablets, at least for some most common or crucial actions.
+So we needed to figure out what those actions are, and how the layout can be organized to utilize the full width of the large screens, but to work on tablets as well.&lt;/p&gt;
+
+&lt;p&gt;So we organized the content in 3 vertical sections - left dedicated to navigation, and center and right for content and actions - the center section contains the most important content and most common actions, and the right one is dedicated for more advanced actions and settings, or for contextual settings related to the item that is currently selected.&lt;br/&gt;
+Middle column is always visible, and right column slides in and out on click, so user can show or hide it at his own will.&lt;/p&gt;
+
+&lt;h4&gt;This is how the 3 columns interact based on available screen width:&lt;/h4&gt;
+
+    
+      &lt;h5&gt;Large desktop&lt;/h5&gt;
+      &lt;p&gt;
+      Navigation is visible. Middle section has 2-column layout. Pulling out the right sidebar reduces the width of middle section (the two can be viewed in parallel).&lt;/p&gt;
+      &lt;a  style=&quot;display: inline-block; text-align:center; width: 100%;&quot; href=&quot;/assets/images/blog/promdm-redesign-wide1.jpg&quot; data-lightbox=&quot;promdm-redesign&quot; data-title=&quot;LARGE DESKTOP - Navigation is visible. Middle section has 2-column layout. Pulling out the right sidebar reduces the width of middle section (the two can be viewed in parallell).&quot;&gt;&lt;img  src=&quot;/assets/images/blog/promdm-redesign-wide1.jpg&quot; /&gt;&lt;/a&gt;
+
+      
+        &lt;h5&gt;Narrow desktop&lt;/h5&gt;
+        &lt;p&gt;Navbar is collapsed. Middle section has 2-column layout. Pulling out the right sidebar doesn&#39;t reduce width of middle section, but overlaps it.
+        
+      &lt;/p&gt;
+      &lt;a style=&quot;display: inline-block; text-align:center; width: 100%;&quot; href=&quot;/assets/images/blog/promdm-redesign-medium2.jpg&quot; data-lightbox=&quot;promdm-redesign&quot; data-title=&quot;NARROW DESKTOP - Navbar is collapsed. Middle section has 2-column layout. Pulling out the right sidebar doesn&#39;t reduce width of middle section, but overlaps it.&quot;&gt;&lt;img  src=&quot;/assets/images/blog/promdm-redesign-medium2.jpg&quot; /&gt;&lt;/a&gt;
+
+   
+    &lt;h5&gt;Tablet&lt;/h5&gt;
+    &lt;p&gt; Both left column (navigation) and sidebar are initially hidden. When pulled out, they overlap the middle section. Middle section has 1-column layout.&lt;/p&gt;
+    &lt;a style=&quot;display: block; width: 100%; text-align:center; &quot; href=&quot;/assets/images/blog/promdm-redesign-tablet3.jpg&quot; data-lightbox=&quot;promdm-redesign&quot; data-title=&quot;TABLET - Both left column (navigation) and sidebar are initially hidden. When pulled out, they overlap the middle section. Middle section has 1-column layout.&quot;&gt;&lt;img src=&quot;/assets/images/blog/promdm-redesign-tablet3.jpg&quot; /&gt;&lt;/a&gt;
+  
+
+&lt;p&gt;This way all the actions are available on all screens (except for the mobile phones - it is not suitable for such complex user interface and not expected to be used by administrators), they just require a few more taps to reach them on tablets.&lt;/p&gt;
+
+&lt;h5&gt;Reducing visual clutter&lt;/h5&gt;
+&lt;p class=&quot;clearfix&quot;&gt;&lt;img class=&quot;project-image&quot; style=&quot;float: right; margin-left: 3%; max-width: 40%; border-radius: 50%; border: 5px solid #fff; box-shadow: 0 0 5px rgba(0,0,0,.3);&quot; src=&quot;/assets/images/blog/promdm-icons.jpg&quot; alt=&quot;ProMDM&quot;/&gt;
+
+The interface is packed with functionalities and there is no space for reinforcing text with icons, so we used either-or approach - each information/action is represented either with text or an icon.&lt;br/&gt;The new interface is simple and clean - whitespace is the main design element, with just a touch of gradients and shadows here and there. The icons that are left are colorful, visually prominent, because they carry important information or actions that need to be easily spotted.&lt;/p&gt;
+
+
+
+
+
+</description>
+        <pubDate>Thu, 22 Oct 2015 14:00:38 +0200</pubDate>
+        <link>http://ejla.github.io/2015/10/22/promdm-redesign-case-study.html</link>
+        <guid isPermaLink="true">http://ejla.github.io/2015/10/22/promdm-redesign-case-study.html</guid>
+        
+        <category>UX DESIGN</category>
+        
+        <category>UI DESIGN</category>
+        
+        
+      </item>
     
       <item>
         <title>What is UX Design All About?</title>
@@ -93,9 +175,8 @@ After analysing all the aspects of the process, we came up with following requir
 &lt;p class=&quot;lead&quot;&gt;Best UX design comes from deep understanding of the problem the product is aiming to solve, or &quot;Understanding the Problem is Half the Solution&quot;.&lt;/p&gt;
 
 &lt;p&gt;PozitivaHub is a successful product - several groups are already using the application and find it helpful, easy to use, with just the right functionalities that make their lives so much easier.
-I believe one of the main reasons for the success was the fact that UX designer - me - was also one of the founders and organizers of the CSA group.
-Understanding of subject matter, users and process is the first step in UX design process, otherwise it comes to tapping in the dark. Usually the understanding is gained by research, interviewing stakeholders, testing and refining and other useful techniques. Much of that process was skipped here, or to be more precise, was going on for almost 2 years prior to actual app development, by being involved in the group organization. By working on this project I was a user, a business owner, a product manager and a UX designer all in one - can&#39;t get better than that ;) &lt;/p&gt;
-&lt;p&gt;This positive experience was for me a living proof that the saying &quot;Understanding the Problem is Half the Solution&quot; is 100% true. The only question is how to achieve the understanding and start solving the problem - that is actually what UX design is all about.&lt;/p&gt;
+Understanding of subject matter, of users and problem it is supposed to solve is the first step in UX design process, otherwise it comes to tapping in the dark. Usually the understanding is gained by research, interviewing stakeholders, testing and refining and other useful UX design techniques. Much of that process was skipped here, or to be more precise, was going on for almost 2 years prior to actual app development, by being involved in the group organization. By working on this project I was a user, a business owner, a product manager and a UX designer all in one - can&#39;t get better than that ;) &lt;/p&gt;
+&lt;p&gt;This positive experience was for me a living proof that the saying &quot;Understanding the Problem is Half the Solution&quot; is 100% true.&lt;/p&gt;
 
 
 
