@@ -6,9 +6,69 @@
 </description>
     <link>http://ejla.github.io/</link>
     <atom:link href="http://ejla.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 22 Oct 2015 11:35:55 +0200</pubDate>
-    <lastBuildDate>Thu, 22 Oct 2015 11:35:55 +0200</lastBuildDate>
+    <pubDate>Sun, 01 Nov 2015 19:59:22 +0100</pubDate>
+    <lastBuildDate>Sun, 01 Nov 2015 19:59:22 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Sketch and Keynote Love Each Other</title>
+        <description>&lt;img style=&quot;width: 80%; max-width: 450px;  display:block; margin: 0 auto&quot; src=&quot;/assets/images/blog/sketch-keynote.png&quot; alt=&quot;Sketch and Keynote&quot;/&gt;
+&lt;p&gt;The first thing that struck me when I started working with Sketch was - wow, this is so much like Keynote. Before that, I&#39;ve been using Keynote for a while as a prototyping tool for several projects and the experience was great - there were some limitations, but it is a very powerful piece of software and you can do miracles with it, and yet it is so intuitive and easy to use. But I did have to use some additional tools, it couldn&#39;t get the whole job of UX prototyping and UI design done.&lt;br/&gt;
+The word spread around that Sketch was the thing for prototyping, so I decided to invest time to explore and master it, but it turned out it&#39;s a sort of extension to beloved Keynote - great :)&lt;/p&gt;
+
+&lt;p&gt;Being an advanced user of Keynote, I was exploring the differences between the two, what improvements Sketch introduced, and which areas Keynote covers better.&lt;br/&gt;
+It turned out both Keynote and Sketch had some advantages over each other, and they perform the best when combined together.&lt;/p&gt;
+
+&lt;h4&gt;Design in Sketch, animate in Keynote&lt;/h4&gt;
+&lt;p&gt;Sketch is a great tool for creating static design, but how can I simulate transitions in user interface on click on a button, or some other user action - how the sidebar slides in when user clicks the link, how the accordion unfolds etc.?&lt;/p&gt;
+
+&lt;p&gt;Well, Keynote has some advanced tools for slide animation, but they can also be used to simulate transitions on user interface. Simply copy the groups of elements in Sketch that you want to animate and paste them in Keynote. Keynote &quot;recognises&quot; Sketch elements and you can continue to animate them.&lt;br/&gt;
+I will not write a lot about how the animation in Keynote is done - there is &lt;a href=&quot;https://medium.com/@_jshmllr/design-in-sketch-then-animate-in-keynote-c7f40e59f8f8#.3cdegczfm&quot; target=&quot;_blank&quot;&gt;a great article&lt;/a&gt; that covers that topic, and several available video tutorials online.&lt;/p&gt;
+
+
+&lt;h4&gt;Tables and charts missing from Sketch&lt;/h4&gt;
+&lt;p&gt;Tables proved to be a very important UI element in my designs - most of admin interfaces and more advanced business software interfaces are based on tables, because they are great for quick scanning and comparing different information.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately Sketch doesn&#39;t support tables as elements - yes, you can draw them using other elements like rectangles and lines, but that is way too much work in quick prototyping phase, when you want to be able to easily add, remove or rearrange rows and columns. Same thing with graphs and charts, there is no simple way to create them in Sketch.&lt;/p&gt;
+
+&lt;p&gt;That is where Keynote comes to rescue. Tools for creating tables and charts in Keynote are powerful. 
+You can create and style very complex tables, apply different backgrounds, borders, paddings etc. using Keynote, and when you are done, simply copy the whole table and paste it in Sketch, and voila, it looks great. &lt;br/&gt;
+After it is pasted in Sketch, the table behaves like a group of rectangles, lines and text, so you can adjust it to some extent (e.g., you can&#39;t correct a typo in text because it is &quot;locked&quot;, but you can delete that text element and create new one instead). For some larger changes, simply go back to Keynote, make adjustments there and copy/paste again. Always make sure you saved the last version of your table both in Sketch and Keynote, because you might want to get back to it.&lt;br/&gt;
+I found this process to be much easier and faster than drawing the tables in Sketch.&lt;/p&gt;
+
+&lt;img style=&quot;width: 80%; max-width: 550px;  display:block; margin: 0 auto&quot; src=&quot;/assets/images/blog/keynote-tables.png&quot; alt=&quot;Keynote Tables&quot;/&gt;&lt;small&gt;Advanced tables and charts styling in Keynote&lt;/small&gt;
+
+
+&lt;h4&gt;So if Keynote can do so much, why even bother with Sketch?&lt;/h4&gt;
+&lt;p&gt;Although I am a big fan of Keynote, there are some crucial things it can&#39;t do:&lt;/p&gt;
+
+&lt;h5&gt;Changing slide/screen size&lt;/h5&gt;
+&lt;p&gt;Keynote lets you set custom slide size, but if you want to change it later, you can&#39;t do it without messing up the elements, they get skewed. Artboards in Sketch are much more flexible - when you adjust the size of artboard, all elements stay how they were.&lt;/p&gt;
+
+&lt;h5&gt;Exporting individual elements&lt;/h5&gt;
+&lt;p&gt;You can only export slides (with solid background), not individual elements, so it is not suitable for creating and exporting graphics. Whatever graphic element you create in Keynote, you will have to recreate in some other suitable software if you want to use it later in html/css.&lt;br/&gt;
+Sketch saves you that extra step - all graphic elements you created can be exported individually, with transparent background. You can even export them as SVG, and apparently it does a great job.&lt;/p&gt;
+
+&lt;h5&gt;Copy/paste instead of Symbols&lt;/h5&gt;
+&lt;p&gt;In Keynote there isn&#39;t anything like symbols in Sketch - if you make a change on one element on one slide/screen, you have to manually replace it on all other slides/screens.&lt;br/&gt;
+A good thing is that you don&#39;t need to adjust position of the element when you paste it, because when you copy something in Keynote on one slide, and paste it to another, it is positioned on exactly the same spot.&lt;/p&gt;
+
+&lt;br/&gt;&lt;br/&gt;
+&lt;p&gt;In my opinion Sketch and Keynote work great together, each contributing with it&#39;s own set of features, and because they are so similar, learning is much easier. At this point I didn&#39;t explore the possibilities of Keynote animation in relation to UI interactions yet, but if it turn&#39;s out practical for that purpose, these two tools make a complete and powerful, yet affordable package for UX/UI design work, and I will look no further.&lt;/p&gt;
+&lt;br/&gt;&lt;br/&gt;
+
+
+</description>
+        <pubDate>Sun, 01 Nov 2015 21:00:38 +0100</pubDate>
+        <link>http://ejla.github.io/2015/11/01/sketch-and-keynote-love-each-other.html</link>
+        <guid isPermaLink="true">http://ejla.github.io/2015/11/01/sketch-and-keynote-love-each-other.html</guid>
+        
+        <category>UX DESIGN</category>
+        
+        <category>UI DESIGN</category>
+        
+        
+      </item>
     
       <item>
         <title>ProMDM Redesign Case Study</title>
