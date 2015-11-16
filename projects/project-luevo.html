@@ -5,7 +5,7 @@ src: luevo
 
 project-description: Luevo is a Toronto-based company that offers a unique take on letting consumers shop the runway. Inspired by crowdfunding, Luevo is letting people pre-order their favorite runway looks, which in turn gives up-and-coming designers the funds that they need to advance production.
 
-job-description: Coding of responsive HTML/CSS - Bootstrap/jQuery templates based on PSD designes provided by the client and integrating them with Ruby on Rails back-end code.
+job-description: This was a pure slicing job - coding of responsive HTML/CSS/Bootstrap/jQuery templates based on PSD designes provided by the client. 
 
 project-tags:   
 - Frontend Development
@@ -16,6 +16,7 @@ technologies:
 - Bootstrap
 - JavaScript
 - jQuery
+- RubyOnRails
 
 category: project
 
@@ -33,6 +34,8 @@ URL: http://preorder.luevo.com/
   {% endfor %}
   </p>
   <p>{{ page.job-description }}</p>
+  <h5>Project Highlights:</h5>
+  <p>The main challenge was to combine numerous rather advanced UI elements - full-screen background video, several types of sliders, product images with thumbnails and zoom effects - with Bootstrap responsive design framework, and incorporate it into already existing backend code (which required understanding of Ruby On Rails templating engine - erb).</p>
   <h5>Technologies:</h5>
   <ul class="technologies">
     {% for technologies in page.technologies %}
