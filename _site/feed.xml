@@ -4,10 +4,10 @@
     <title>Mirna Majstorović - UX Designer and Web Developer</title>
     <description>I am prototyping web applications and designing and coding user interfaces in HTML, CSS and JavaScript. I like to make complex workflows simple, seamless, and pleasant and strive to deliver well thought-out designs, accompanied by clean, valid, reusable code.
 </description>
-    <link>http://ejla.github.io/</link>
-    <atom:link href="http://ejla.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 20 Jul 2022 16:24:05 +0200</pubDate>
-    <lastBuildDate>Wed, 20 Jul 2022 16:24:05 +0200</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 20 Jul 2022 16:37:52 +0200</pubDate>
+    <lastBuildDate>Wed, 20 Jul 2022 16:37:52 +0200</lastBuildDate>
     <generator>Jekyll v4.2.2</generator>
     
       <item>
@@ -60,8 +60,8 @@ A good thing is that you don't need to adjust position of the element when you p
 
 </description>
         <pubDate>Sun, 01 Nov 2015 21:00:38 +0100</pubDate>
-        <link>http://ejla.github.io/2015/11/01/sketch-and-keynote-love-each-other.html</link>
-        <guid isPermaLink="true">http://ejla.github.io/2015/11/01/sketch-and-keynote-love-each-other.html</guid>
+        <link>http://localhost:4000/2015/11/01/sketch-and-keynote-love-each-other.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/11/01/sketch-and-keynote-love-each-other.html</guid>
         
         <category>UX DESIGN</category>
         
@@ -141,8 +141,8 @@ The interface is packed with functionalities and there is no space for reinforci
 
 </description>
         <pubDate>Thu, 22 Oct 2015 14:00:38 +0200</pubDate>
-        <link>http://ejla.github.io/2015/10/22/promdm-redesign-case-study.html</link>
-        <guid isPermaLink="true">http://ejla.github.io/2015/10/22/promdm-redesign-case-study.html</guid>
+        <link>http://localhost:4000/2015/10/22/promdm-redesign-case-study.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/10/22/promdm-redesign-case-study.html</guid>
         
         <category>UX DESIGN</category>
         
@@ -180,8 +180,8 @@ This is the moment when UX designer includes other members of the product design
 
 </description>
         <pubDate>Tue, 13 Oct 2015 21:42:38 +0200</pubDate>
-        <link>http://ejla.github.io/2015/10/13/what-is-ux-design.html</link>
-        <guid isPermaLink="true">http://ejla.github.io/2015/10/13/what-is-ux-design.html</guid>
+        <link>http://localhost:4000/2015/10/13/what-is-ux-design.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/10/13/what-is-ux-design.html</guid>
         
         <category>UX DESIGN</category>
         
@@ -243,8 +243,8 @@ Understanding of subject matter, of users and problem it is supposed to solve is
 
 </description>
         <pubDate>Fri, 09 Oct 2015 21:42:38 +0200</pubDate>
-        <link>http://ejla.github.io/2015/10/09/pozitivahub-case-study.html</link>
-        <guid isPermaLink="true">http://ejla.github.io/2015/10/09/pozitivahub-case-study.html</guid>
+        <link>http://localhost:4000/2015/10/09/pozitivahub-case-study.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/10/09/pozitivahub-case-study.html</guid>
         
         <category>UX DESIGN</category>
         
