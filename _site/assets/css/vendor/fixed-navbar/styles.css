@@ -224,7 +224,7 @@ a:hover {
 .nav-collapse a {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   text-decoration: none;
@@ -232,6 +232,9 @@ a:hover {
   width: 100%;
   float: left;
   line-height: 50px;
+}
+.nav-collapse a:hover {
+  color: #E4482D
 }
 .nav-collapse a.active, .nav-collapse a.active:after {
   color: #E4482D;
@@ -246,7 +249,7 @@ a:hover {
     border-top: 0;
     float: left;
     margin: 0;
-    
+
   }
 }
 
@@ -299,17 +302,15 @@ a:hover {
 }
 
 #nav-home:after {
-  content:'\f015'; 
-  font-family: 'FontAwesome'; 
-  font-size: 22px; 
-  font-weight: normal;  
+  content:'\f015';
+  font-family: 'FontAwesome';
+  font-size: 22px;
+  font-weight: normal;
 }
 
 @media screen and (min-width: 40em) {
   #nav-home:after {
-    position: relative; 
+    position: relative;
     top:-1px;
   }
 }
-
-

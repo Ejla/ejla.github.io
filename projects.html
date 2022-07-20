@@ -1,0 +1,20 @@
+---
+layout: layout-projects
+title: Projects
+---
+
+{% for project in site.projects %}
+
+
+<div class="col-project">
+  <div class="project bg6">
+    <img src="../assets/images/projects/{{ project.slug }}/{{ project.slug }}-featured.{{ project.img-type }}"
+      alt="{{ project.title }}" />
+    <a href="{{ project.url }}">
+      <i class="fa fa-chevron-circle-right"></i>
+    </a>
+  </div>
+  <h5><a href="{{ project.url }}">{{ project.title }}</a></h5>
+</div>
+
+{% endfor %}
