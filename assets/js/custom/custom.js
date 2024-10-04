@@ -1,20 +1,20 @@
 var nanobar = new Nanobar({
-  bg : "rgba(0, 0, 0, .5)"
+  bg: "rgba(0, 0, 0, .5)"
 });
 nanobar.go(100);
 
-$(document).ready(function() {
-  
+$(document).ready(function () {
+
   $('.nav-toggle').addClass('a2');
-  
-  $('.hero-bg').last().hide();
-  function rotateHeroBackground() {
-      $(".hero-bg").first().appendTo('#hero').fadeOut(5000);
-      $(".hero-bg").first().fadeIn(5000);
-      setTimeout(rotateHeroBackground, 7000);
-  }
-  rotateHeroBackground();
-  
+
+  // $('.hero-bg').last().hide();
+  // function rotateHeroBackground() {
+  //     $(".hero-bg").first().appendTo('#hero').fadeOut(5000);
+  //     $(".hero-bg").first().fadeIn(5000);
+  //     setTimeout(rotateHeroBackground, 7000);
+  // }
+  // rotateHeroBackground();
+
   $('#carousel').slick({
     infinite: true,
     speed: 300,
@@ -53,23 +53,23 @@ $(document).ready(function() {
       }
     ]
   });
-  
+
   if (top.location.pathname === '/work/') {
     handleLoadProject();
   }
-  
+
   enableCarouselSwipe();
-  
+
   // http://cookiecuttr.com/
   $.cookieCuttr({
-    cookieNotificationLocationBottom : true,
+    cookieNotificationLocationBottom: true,
     cookieWhatAreLinkText: ''
-  });	
-  
+  });
+
 });
 
 function enableCarouselSwipe() {
-  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     $('#carousel .slick-prev').addClass('slick-nav-mobile');
     $('#carousel .slick-next').addClass('slick-nav-mobile');
   }
@@ -78,7 +78,7 @@ function enableCarouselSwipe() {
 function handleLoadProject() {
   var project, hash = window.location.hash;
   if (hash !== "") {
-    project = hash.replace(/#/,"");
+    project = hash.replace(/#/, "");
     loadProject(project);
     findInSlider(project);
   } else {
@@ -87,38 +87,29 @@ function handleLoadProject() {
   }
 }
 function findInSlider(project) {
-   var projects = {};
-   $('.slick-slide').not('.slick-cloned').each(function(){
-     var key = $(this).find('.project').attr('data-project');
-     var value = $(this).attr('data-slick-index');
-     projects[key] = value;
-   });
+  var projects = {};
+  $('.slick-slide').not('.slick-cloned').each(function () {
+    var key = $(this).find('.project').attr('data-project');
+    var value = $(this).attr('data-slick-index');
+    projects[key] = value;
+  });
   $('#carousel').slick('slickGoTo', projects[project]);
 }
 function loadProject(project) {
-  $.get( '../projects/' + project + '.html', function(data, textStatus, jqXHR) {
-    $('#project').hide().html(data).fadeIn('slow'); 
-  }).fail(function() {
+  $.get('../projects/' + project + '.html', function (data, textStatus, jqXHR) {
+    $('#project').hide().html(data).fadeIn('slow');
+  }).fail(function () {
     var msg = "Sorry but there was an error in connection to server";
     alert(msg);
   });
 }
-$('#carousel').on('afterChange', function(event, slick, currentSlide){
+$('#carousel').on('afterChange', function (event, slick, currentSlide) {
   var projectID = $("[data-slick-index='" + currentSlide + "']").find('.project').attr('data-project');
   findInSlider(project);
   loadProject(projectID);
   window.location.hash = projectID;
 });
 
-$('#carousel').on('init', function(slick){
+$('#carousel').on('init', function (slick) {
   $(this).find('.project').css('opacity', '1');
 });
-
-
-
-
-
-
-
-
-

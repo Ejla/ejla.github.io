@@ -21,7 +21,7 @@
     h1 {
       font-size: 2em;
       margin-top: 0;
-      color: #F1F1F1;
+      color: #f1f1f1;
       text-transform: uppercase;
       font-weight: 400;
       em {
@@ -30,16 +30,15 @@
       }
       span {
         display: block;
-        font-size: .7em;
+        font-size: 0.7em;
         text-transform: none;
         margin: 5px 0;
         &:last-child {
-          font-size: .5em;
+          font-size: 0.5em;
         }
       }
     }
     div.hero-description {
-
       max-width: 800px;
     }
     p {
@@ -53,20 +52,18 @@
       font-size: 16px;
       padding: 40px 30px;
     }
-
   }
-
 }
 #background1 {
-  background: url('../images/mm4.jpg') no-repeat center right;
+  background: url("../images/hero.jpg") no-repeat center right;
   background-size: cover;
-  @media (max-width: 800px) {
-    background: url('../images/mm4_small.jpg') no-repeat center right;
-    background-size: cover;
-  }
+  // @media (max-width: 800px) {
+  //   background: url('../images/mm4_small.jpg') no-repeat center right;
+  //   background-size: cover;
+  // }
 }
 #background2 {
-  background: url('../images/bg.jpg') no-repeat center;
+  background: url("../images/bg.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -82,15 +79,15 @@
 }
 
 .more-link {
-    text-align: center;
-    a {
-      text-transform: uppercase;
-      font-weight: 500;
-      i {
-        margin-left: 5px;
-      }
+  text-align: center;
+  a {
+    text-transform: uppercase;
+    font-weight: 500;
+    i {
+      margin-left: 5px;
     }
   }
+}
 
 #technologies {
   .logos {
@@ -105,29 +102,27 @@
     margin: 0 auto;
   }
 
-
   .col-thumb {
     margin-bottom: 20px;
     img {
       width: 80%;
       max-width: 85px;
-      opacity: .6;
+      opacity: 0.6;
     }
     h6 {
       color: #888;
     }
     @media (max-width: 800px) {
-
       flex: 0 0 33.333%;
       img {
         max-width: 60px;
-        opacity: .6;
+        opacity: 0.6;
       }
     }
 
     @media (max-width: 400px) {
       h6 {
-      display: none;
+        display: none;
       }
       img {
         max-width: 50px;
@@ -145,13 +140,12 @@
 }
 
 .col-project {
-    width: 50%;
-    margin-bottom: 20px;
-    @media (max-width: 1000px) {
-      width: 100%;
-    }
+  width: 50%;
+  margin-bottom: 20px;
+  @media (max-width: 1000px) {
+    width: 100%;
   }
-
+}
 
 .project {
   position: relative;
@@ -159,7 +153,7 @@
   width: 100%;
   padding-top: 66%;
   overflow: hidden;
-  box-shadow: 0 0 20px rgba(0,0,0,.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   img {
     width: 100%;
     position: absolute;
@@ -174,32 +168,32 @@
     right: 0;
     opacity: 0;
     padding: 10% 20px;
-    background-color: rgba(255, 255, 255, .2);
-    border: 5px solid rgba(0, 0, 0, .1);
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 5px solid rgba(0, 0, 0, 0.1);
     i {
       font-size: 84px;
       position: absolute;
       top: calc(50% - 42px);
       left: calc(50% - 42px);
-      color: rgba(0, 0, 0, .3);
+      color: rgba(0, 0, 0, 0.3);
     }
   }
   a:hover {
     opacity: 1;
   }
-  &+h5 {
+  & + h5 {
     text-align: center;
     position: relative;
     top: -5px;
-a {
-    color: $primaryDark;
-    font-size: 18px;
-    font-weight: 500;
+    a {
+      color: $primaryDark;
+      font-size: 18px;
+      font-weight: 500;
 
-    &:hover {
-      color: $accent;
+      &:hover {
+        color: $accent;
+      }
     }
-  }
   }
 }
 #carousel .project {
@@ -208,17 +202,15 @@ a {
 
 // OTHER PAGES
 
-
 #skills {
-
   h2 {
     margin-bottom: 10px;
   }
-  h4  {
+  h4 {
     margin-bottom: 15px;
     font-size: 16px;
     text-transform: uppercase;
-    span{
+    span {
       display: block;
       font-size: 14px;
       font-weight: 500;
@@ -233,7 +225,8 @@ a {
   }
 }
 
-#process, #background {
+#process,
+#background {
   h4 {
     margin-top: -10px;
   }
@@ -252,7 +245,7 @@ a {
     list-style: none;
     padding: 0;
     margin-top: -20px;
-    li{
+    li {
       margin-bottom: 30px;
       h3 {
         font-size: 18px;
@@ -279,7 +272,7 @@ a {
   }
 }
 #blog-hero {
-  background: url('../images/bg.jpg') no-repeat center $primaryDark;
+  background: url("../images/bg.jpg") no-repeat center $primaryDark;
   background-size: cover;
   padding: 5% 7%;
   color: $bg3;
@@ -314,39 +307,41 @@ a {
   }
 }
 
-  h3.projects-hero {
-    max-width: 750px;
-    margin: 30px auto;
-    position: relative;
-    text-align: center;
-    padding: 40px 0 50px;
-    strong {
-      color: $accentLight;
-    }
-    &::before, &::after {
-      content: '';
-      position: absolute;
-      width: 80px;
-      height: 1px;
-      background-color: #fff;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-    &::before {
-      top: 0;
-    }
+h3.projects-hero {
+  max-width: 750px;
+  margin: 30px auto;
+  position: relative;
+  text-align: center;
+  padding: 40px 0 50px;
+  strong {
+    color: $accentLight;
+  }
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 1px;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &::before {
+    top: 0;
+  }
+  &::after {
+    bottom: 0;
+  }
+  @media screen and (max-width: 800px) {
+    font-size: 20px;
+    padding: 20px 0 30px;
+    margin: 20px 0;
+    &::before,
     &::after {
-      bottom: 0;
-    }
-    @media screen and (max-width: 800px) {
-      font-size: 20px;
-      padding: 20px 0 30px;
-      margin: 20px 0;
-      &::before, &::after {
-        width: 60px;
-      }
+      width: 60px;
     }
   }
+}
 
 .project-overview {
   h3 {
@@ -388,12 +383,12 @@ a {
       margin: 0 10px 10px 0;
       img {
         width: 60%;
-        opacity: .4;
+        opacity: 0.4;
       }
       h6 {
         font-weight: 400;
         font-size: 13px;
-        opacity: .8;
+        opacity: 0.8;
       }
     }
   }
@@ -405,15 +400,18 @@ a {
     margin-top: 0;
   }
   .img-container {
-    box-shadow: 0 0 20px rgba(0,0,0,.05), 0 6px 10px rgba(0,0,0,.1), 0 -6px 10px rgba(0,0,0,.05);
+    box-shadow:
+      0 0 20px rgba(0, 0, 0, 0.05),
+      0 6px 10px rgba(0, 0, 0, 0.1),
+      0 -6px 10px rgba(0, 0, 0, 0.05);
     border-radius: 6px;
     overflow: hidden;
-      img {
-        display: block;
-        max-width: 100%;
-        margin: 0;
-      }
+    img {
+      display: block;
+      max-width: 100%;
+      margin: 0;
     }
+  }
   .single-project-header {
     display: flex;
 
@@ -438,9 +436,8 @@ a {
         margin-left: 5px;
         width: 18px;
         display: block;
-
       }
-      &:hover svg path{
+      &:hover svg path {
         fill: $accentDark;
       }
     }
@@ -462,30 +459,27 @@ a {
   .row {
     display: flex;
     flex-wrap: wrap;
-
   }
   .col-6 {
-      flex: 0 0 50%;
-      max-width: 50%;
-    }
-  @media screen and (max-width: 1200px){
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  @media screen and (max-width: 1200px) {
     .col-6 {
       flex: 0 0 100%;
       max-width: 100%;
     }
     .img-container {
-
       margin-bottom: 40px;
     }
     .single-project-details {
-      .col-6:not(.has-img){
+      .col-6:not(.has-img) {
         order: 1;
       }
       .col-6.has-img {
         order: 2;
       }
     }
-
   }
 }
 .project-screens {
