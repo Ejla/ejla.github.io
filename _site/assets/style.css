@@ -2,7 +2,7 @@
 :root {
   --primary-50: #F4F7FB;
   --primary-100: #E4EAF2;
-  --primary-200: #D9DFE8;
+  --primary-200: #e9ecf2;
   --primary: #333C52;
   /* sivoplava */
   --primary-light: #66798a;
@@ -1060,7 +1060,7 @@ aside[class^=bg] {
 @media (max-width: 850px) {
   #background1 {
     background-position: center right -80px;
-    opacity: .2;
+    opacity: .15;
   }
 
   #hero-content div.hero-description {
