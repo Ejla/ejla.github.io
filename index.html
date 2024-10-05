@@ -38,15 +38,35 @@ layout: default
   <br />
 </section>
 
-<section id="technologies" class="bg2">
+<section id="projects-overview" class="bg-2">
   <div class="heading-more">
-    <h2>Tools &amp; Technologies</h2>
-    <a class="more-link" href="{{ site.baseurl }}/about/">More details <i class="fa fa-long-arrow-right"></i></a>
+    <h2>Projects</h2>
+    <a class="more-link" href="{{ site.baseurl }}/projects/">More details <i class="fa fa-long-arrow-right"></i></a>
+  </div>
+  <div class="projects-cards">
+    {% for project in site.projects %}
+    <a href="{{ project.url }}" class="project-card">
+      <div class="img-container">
+        <img
+          src="{{ site.baseurl }}/assets/images/projects/{{ project.slug }}//{{ project.slug }}-thumbnail.{{ project.img-type }}"
+          alt="{{ project.title }}" />
+      </div>
+      <div class="content-container">
+        <h5>{{ project.title }}
+        </h5>
+        <p>{{ project.excerpt }}</p>
+      </div>
+    </a>
+    {% endfor %}
   </div>
 
+</section>
 
-
-
+<section id="technologies" class="bg1">
+  <div class="heading-more">
+    <h2>Tools</h2>
+    <a class="more-link" href="{{ site.baseurl }}/about/">More details <i class="fa fa-long-arrow-right"></i></a>
+  </div>
   <div class="logos">
 
     <div class="col-thumb">
