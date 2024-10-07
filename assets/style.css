@@ -281,6 +281,11 @@ section[class^=bg] {
   /* IE6-8 */
 }
 
+section.outlined {
+  padding: 40px;
+  border: 1px solid var(--primary-light);
+}
+
 section {
   border-radius: 20px;
 }
@@ -658,12 +663,16 @@ aside[class^=bg] {
   }
 }
 
-.single-project .back-link {
-  @media screen and (max-width: 800px) {
-    position: fixed;
-    top: 20px;
-    left: 16px;
-    z-index: 99;
+.single-project {
+  padding-top: 30px;
+
+  .single-project .back-link {
+    @media screen and (max-width: 800px) {
+      position: fixed;
+      top: 20px;
+      left: 16px;
+      z-index: 99;
+    }
   }
 }
 
@@ -1149,7 +1158,7 @@ aside[class^=bg] {
   max-width: 50%;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   .single-project-details .col-6 {
     flex: 0 0 100%;
     max-width: 100%;
@@ -1190,7 +1199,7 @@ aside[class^=bg] {
   font-size: 1.1em;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   .project-screens .img-container+p {
     position: relative;
     top: -20px;
@@ -1245,7 +1254,7 @@ aside[class^=bg] {
 
 }
 
-@media (min-width: 900px) {
+@media screen and (min-width: 900px) {
   #background1 {
     background: url("images/hero.jpg") no-repeat center right;
     opacity: 1;
@@ -1266,3 +1275,50 @@ aside[class^=bg] {
     height: 60px;
   }
 }
+.gallery-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: opacity 0.5s ease;
+  .gallery-content {
+    position: relative;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gallery-content img {
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease;
+  }
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 999;
+  }
+  .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    display: none; /* Hide the loader initially */
+  }
+}
+

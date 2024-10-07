@@ -252,6 +252,14 @@ The interface is packed with functionalities and there is no space for reinforci
 
 </footer>
 
+<div id="galleryModal" class="gallery-modal" onclick="closeGallery()">
+  <span class="close" onclick="closeGallery()">&times;</span>
+  <div class="gallery-content">
+    <div class="loader" id="loader">Loading...</div>
+    <img id="galleryImage" src="" alt="Gallery Image" onload="hideLoader()" />
+  </div>
+</div>
+
     
     
 <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script> -->
@@ -290,6 +298,42 @@ The interface is packed with functionalities and there is no space for reinforci
   ga('create', 'UA-68825004-1', 'auto');
   ga('send', 'pageview');
 
+</script>
+<script>
+  let currentImageIndex = 0;
+  const images = Array.from(document.querySelectorAll('.img-container img')).map(img => {
+    return img.src.replace('-sm.webp', '.webp'); // Replace -sm with nothing to get the larger image
+  });
+
+  function openGallery(index) {
+    currentImageIndex = index;
+    const modal = document.getElementById("galleryModal");
+    const img = document.getElementById("galleryImage");
+    const loader = document.getElementById("loader");
+    
+    loader.style.display = "block"; // Show loader
+    img.src = images[currentImageIndex]; // Set the src when opening the gallery
+    modal.style.display = "block";
+    modal.style.opacity = 1;
+    document.body.style.overflow = "hidden"; // Prevent background scrolling
+  }
+
+  function closeGallery() {
+    const modal = document.getElementById("galleryModal");
+    modal.style.opacity = 0;
+    setTimeout(() => {
+      modal.style.display = "none";
+      document.body.style.overflow = ""; // Restore background scrolling
+    }, 500);
+  }
+  function hideLoader() {
+    const loader = document.getElementById("loader");
+    const img = document.getElementById("galleryImage");
+    loader.style.display = "none"; // Hide loader
+    img.style.display = "block"; // Show the image
+  }
+
+  
 </script>
 
     

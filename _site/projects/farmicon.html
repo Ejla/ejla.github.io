@@ -98,49 +98,48 @@
 
       <div class="container">
         <article class="single-project">
-  <section class="bg">
 
-    <div class="single-project-summary">
 
-      <div class="img-container">
-        <img
-          src="/assets/images/projects/farmicon//farmicon-thumbnail.png"
-          alt="Farmicon - Local Food Software" />
-      </div>
-      <div class="content-container">
+  <div class="single-project-summary">
 
-        <a class="back-link" href="/projects.html"><i class="fa fa-long-arrow-right"></i><span>All
-            projects</span></a>
-        <h1>Farmicon - Local Food Software</h1>
-        <div class="single-project-meta">
-          <div class="excerpt"><p>Farmicon was my personal project, where I was a Product Owner and Designer.</p> <p>I was leading the design process from the first idea until it's final implementation.</p></div>
-          <p class="project-tags">
-            
-            
-            <span class="tag">PRODUCT DESIGN</span>
-            
-            <span class="tag">UX RESEARCH</span>
-            
-            <span class="tag">UX DESIGN</span>
-            
-            <span class="tag">UI DESIGN</span>
-            
-            <span class="tag">USER PORTAL</span>
-            
-            <span class="tag">HTML</span>
-            
-            <span class="tag">CSS</span>
-            
-            <span class="tag">RESPONSIVE WEB APP</span>
-            
-            
-          </p>
-          
-        </div>
-      </div>
-
+    <div class="img-container" onclick="openGallery(0)">
+      <img src="/assets/images/projects/farmicon//farmicon-01-sm.webp"
+        alt="Farmicon - Local Food Software" />
     </div>
-  </section>
+    <div class="content-container">
+
+      <a class="back-link" href="/projects.html"><i class="fa fa-long-arrow-right"></i><span>All
+          projects</span></a>
+      <h1>Farmicon - Local Food Software</h1>
+      <div class="single-project-meta">
+        <div class="excerpt"><p>Farmicon was my personal project, where I was a Product Owner and Designer.</p> <p>I was leading the design process from the first idea until it's final implementation.</p></div>
+        <p class="project-tags">
+          
+          
+          <span class="tag">PRODUCT DESIGN</span>
+          
+          <span class="tag">UX RESEARCH</span>
+          
+          <span class="tag">UX DESIGN</span>
+          
+          <span class="tag">UI DESIGN</span>
+          
+          <span class="tag">USER PORTAL</span>
+          
+          <span class="tag">HTML</span>
+          
+          <span class="tag">CSS</span>
+          
+          <span class="tag">RESPONSIVE WEB APP</span>
+          
+          
+        </p>
+        
+      </div>
+    </div>
+
+  </div>
+
   <div class="single-project-details">
     <div class="single-project-details">
   <section class="bg1">
@@ -185,8 +184,8 @@
 <section class="project-screens">
   <div class="row">
     <div class="col-6">
-      <div class="img-container">
-        <img src="/assets/images/projects/farmicon/farmicon-06.png"
+      <div class="img-container" onclick="openGallery(1)">
+        <img src="/assets/images/projects/farmicon/farmicon-02-sm.webp"
           alt="Farmicon - Local Food Software" />
       </div>
       <p><strong>Research - User Personas
@@ -200,8 +199,8 @@
         errors. After a careful research I identified 6 personas who would benefit from such a product.</p>
     </div>
     <div class="col-6">
-      <div class="img-container">
-        <img src="/assets/images/projects/farmicon/farmicon-01.png"
+      <div class="img-container" onclick="openGallery(2)">
+        <img src="/assets/images/projects/farmicon/farmicon-03-sm.webp"
           alt="Farmicon - Local Food Software" />
       </div>
       <p><strong>Product Page</strong><br />
@@ -213,8 +212,8 @@
       </p>
     </div>
     <div class="col-6">
-      <div class="img-container">
-        <img src="/assets/images/projects/farmicon/farmicon-02.png"
+      <div class="img-container" onclick="openGallery(3)">
+        <img src="/assets/images/projects/farmicon/farmicon-04-sm.webp"
           alt="Farmicon - Local Food Software" />
       </div>
       <p><strong>Overview of Current Offers
@@ -226,8 +225,8 @@
         orders.</p>
     </div>
     <div class="col-6">
-      <div class="img-container">
-        <img src="/assets/images/projects/farmicon/farmicon-03.png"
+      <div class="img-container" onclick="openGallery(4)">
+        <img src="/assets/images/projects/farmicon/farmicon-05-sm.webp"
           alt="Farmicon - Local Food Software" />
       </div>
       <p><strong>Order Form
@@ -244,8 +243,8 @@
         re-calculate prices, or block certain product on the go.</p>
     </div>
     <div class="col-6">
-      <div class="img-container">
-        <img src="/assets/images/projects/farmicon/farmicon-04.png"
+      <div class="img-container" onclick="openGallery(5)">
+        <img src="/assets/images/projects/farmicon/farmicon-06-sm.webp"
           alt="Farmicon - Local Food Software" />
       </div>
       <p><strong>Farmer's Profile Page
@@ -261,8 +260,8 @@
 
 
     <div class="col-6">
-      <div class="img-container">
-        <img src="/assets/images/projects/farmicon/farmicon-05.png"
+      <div class="img-container" onclick="openGallery(6)">
+        <img src="/assets/images/projects/farmicon/farmicon-01-sm.webp"
           alt="Farmicon - Local Food Software" />
       </div>
       <p><strong>Final Product
@@ -361,6 +360,14 @@
 
 </footer>
 
+<div id="galleryModal" class="gallery-modal" onclick="closeGallery()">
+  <span class="close" onclick="closeGallery()">&times;</span>
+  <div class="gallery-content">
+    <div class="loader" id="loader">Loading...</div>
+    <img id="galleryImage" src="" alt="Gallery Image" onload="hideLoader()" />
+  </div>
+</div>
+
     
     
 <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script> -->
@@ -399,6 +406,42 @@
   ga('create', 'UA-68825004-1', 'auto');
   ga('send', 'pageview');
 
+</script>
+<script>
+  let currentImageIndex = 0;
+  const images = Array.from(document.querySelectorAll('.img-container img')).map(img => {
+    return img.src.replace('-sm.webp', '.webp'); // Replace -sm with nothing to get the larger image
+  });
+
+  function openGallery(index) {
+    currentImageIndex = index;
+    const modal = document.getElementById("galleryModal");
+    const img = document.getElementById("galleryImage");
+    const loader = document.getElementById("loader");
+    
+    loader.style.display = "block"; // Show loader
+    img.src = images[currentImageIndex]; // Set the src when opening the gallery
+    modal.style.display = "block";
+    modal.style.opacity = 1;
+    document.body.style.overflow = "hidden"; // Prevent background scrolling
+  }
+
+  function closeGallery() {
+    const modal = document.getElementById("galleryModal");
+    modal.style.opacity = 0;
+    setTimeout(() => {
+      modal.style.display = "none";
+      document.body.style.overflow = ""; // Restore background scrolling
+    }, 500);
+  }
+  function hideLoader() {
+    const loader = document.getElementById("loader");
+    const img = document.getElementById("galleryImage");
+    loader.style.display = "none"; // Hide loader
+    img.style.display = "block"; // Show the image
+  }
+
+  
 </script>
 
     

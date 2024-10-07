@@ -110,7 +110,7 @@
   <div class="single-project-summary">
 
     <a class="img-container" href="/projects/cachefly.html">
-      <img src="/assets/images/projects/cachefly-thumbnail-min.jpg"
+      <img src="/assets/images/projects/featured/cachefly-featured.webp"
         alt="Cachefly CDN - User Portal" />
     </a>
 
@@ -187,7 +187,7 @@
   <div class="single-project-summary">
 
     <a class="img-container" href="/projects/workzone.html">
-      <img src="/assets/images/projects/workzone-thumbnail-min.jpg"
+      <img src="/assets/images/projects/featured/workzone-featured.webp"
         alt="Workzone - Project Management Software" />
     </a>
 
@@ -262,7 +262,7 @@
   <div class="single-project-summary">
 
     <a class="img-container" href="/projects/farmicon.html">
-      <img src="/assets/images/projects/farmicon-thumbnail-min.jpg"
+      <img src="/assets/images/projects/featured/farmicon-featured.webp"
         alt="Farmicon - Local Food Software" />
     </a>
 
@@ -322,7 +322,7 @@
   <div class="single-project-summary">
 
     <a class="img-container" href="/projects/aoa.html">
-      <img src="/assets/images/projects/aoa-thumbnail-min.jpg"
+      <img src="/assets/images/projects/featured/aoa-featured.webp"
         alt="Airline Operations Analytics Software" />
     </a>
 
@@ -359,7 +359,7 @@
 
 <!-- <div class="col-project">
   <div class="project bg6">
-    <img src="../assets/images/projects/aoa/aoa-featured.jpg"
+    <img src="../assets/images/projects/aoa/aoa-featured."
       alt="Airline Operations Analytics Software" />
     <a href="/projects/aoa.html">
       <i class="fa fa-chevron-circle-right"></i>
@@ -447,6 +447,14 @@
 
 </footer>
 
+<div id="galleryModal" class="gallery-modal" onclick="closeGallery()">
+  <span class="close" onclick="closeGallery()">&times;</span>
+  <div class="gallery-content">
+    <div class="loader" id="loader">Loading...</div>
+    <img id="galleryImage" src="" alt="Gallery Image" onload="hideLoader()" />
+  </div>
+</div>
+
     
     
 <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script> -->
@@ -485,6 +493,42 @@
   ga('create', 'UA-68825004-1', 'auto');
   ga('send', 'pageview');
 
+</script>
+<script>
+  let currentImageIndex = 0;
+  const images = Array.from(document.querySelectorAll('.img-container img')).map(img => {
+    return img.src.replace('-sm.webp', '.webp'); // Replace -sm with nothing to get the larger image
+  });
+
+  function openGallery(index) {
+    currentImageIndex = index;
+    const modal = document.getElementById("galleryModal");
+    const img = document.getElementById("galleryImage");
+    const loader = document.getElementById("loader");
+    
+    loader.style.display = "block"; // Show loader
+    img.src = images[currentImageIndex]; // Set the src when opening the gallery
+    modal.style.display = "block";
+    modal.style.opacity = 1;
+    document.body.style.overflow = "hidden"; // Prevent background scrolling
+  }
+
+  function closeGallery() {
+    const modal = document.getElementById("galleryModal");
+    modal.style.opacity = 0;
+    setTimeout(() => {
+      modal.style.display = "none";
+      document.body.style.overflow = ""; // Restore background scrolling
+    }, 500);
+  }
+  function hideLoader() {
+    const loader = document.getElementById("loader");
+    const img = document.getElementById("galleryImage");
+    loader.style.display = "none"; // Hide loader
+    img.style.display = "block"; // Show the image
+  }
+
+  
 </script>
 
     

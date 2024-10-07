@@ -57,3 +57,11 @@
   </div>
 
 </footer>
+
+<div id="galleryModal" class="gallery-modal" onclick="closeGallery()">
+  <span class="close" onclick="closeGallery()">&times;</span>
+  <div class="gallery-content">
+    <div class="loader" id="loader">Loading...</div>
+    <img id="galleryImage" src="" alt="Gallery Image" onload="hideLoader()" />
+  </div>
+</div>
