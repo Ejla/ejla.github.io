@@ -1242,6 +1242,8 @@ section.single-project-summary {
   margin: 0 auto;
 
   #about-intro {
+    background-color: #F8F7F7;
+
     @media screen and (min-width: 1001px) {
       background-image: url("images/about-bg.jpg");
       background-repeat: no-repeat;
